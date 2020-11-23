@@ -1,0 +1,14 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+}
+#mask {
+    background-image: url("assets/Test-canvas.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 960px 0;
+    z-index: 9999;
+    pointer-events: none;
+}
