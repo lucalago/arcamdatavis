@@ -1,7 +1,7 @@
 var win2;
 
 function openSecondaryWindow() {
-    return win2 = window.open('/projection.html', 'secondary', 'width=1920,height=1080');
+    return win2 = window.open('https://lucalago.github.io/arcamdatavis/projection.html', 'secondary', 'width=1920,height=1080');
 }
 
 function flash() {
