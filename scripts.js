@@ -26,7 +26,7 @@ var windowFeatures = 'scrollbars=no,width=600,height=600,right=0,top=0';
 
 function openProjectionWindow() {
     if(win2 == null || win2.closed){
-        win2 = window.open('/index2.html', 'projectionWindow', windowFeatures);
+        win2 = window.open('/arcamdatavis/index2.html', 'projectionWindow', windowFeatures);
     } else {
         win2.focus();
     }
