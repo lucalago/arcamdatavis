@@ -1,39 +1,48 @@
+var currentSectionId = 'init';
+
+let sections = document.getElementsByTagName("section");
+for (let section of sections) {
+  section.style.display = 'none';
+}
+document.getElementById(currentSectionId).style.display = "block";
+
+let links = document.getElementsByClassName("nav-button");
+
+for (let link of links){
+    link.addEventListener('click', function(e) {
+      var newSectionId = link.getAttribute("href").slice(1, link.getAttribute("href").length);
+
+      var newSection = document.getElementById(newSectionId);
+      var currentSection = document.getElementById(currentSectionId);
+
+      currentSection.style.display = 'none';
+      newSection.style.display = 'block';
+      currentSectionId = newSectionId;
+    })
+};
+
 var win2;
+var windowFeatures = 'scrollbars=no,width=600,height=600,right=0,top=0';
 
-function openSecondaryWindow() {
-    return win2 = window.open('/arcamdatavis/projection.html', 'secondary', 'width=600,height=600');
+function openProjectionWindow() {
+    if(win2 == null || win2.closed){
+        win2 = window.open('/index2.html', 'projectionWindow', windowFeatures);
+    } else {
+        win2.focus();
+    }
 }
 
-function flash() {
-    $('body').css('background-color', 'red').animate({
-        'background-color': '#fff'
-    });
+function loadWasteModule (){
+    document.getElementById('proj-mainscreen').style.display = 'none';
+    document.getElementById('proj-wastemodule').style.display = 'block';
 }
 
-$(function() {
-
-    if (!openSecondaryWindow()) $(document.body).prepend('<a href="#">Popup blocked.  Click here to open the secondary window.</a>').click(function() {
-        openSecondaryWindow();
-        return false;
-    });
-
-    $('#inc').click(function() {
-        if (win2) win2.increment();
-        else alert('The secondary window is not open.');
-        return false;
-    });
-});
-
-var i = 0;
-
-function increment() {
-    $('span').text(++i + ' time' + (i == 1 ? '' : 's'));
+function initFunction(){
+    openProjectionWindow();
 }
 
-$(function() {
-    $('a').click(function() {
-       if (opener) opener.flash();
-        else alert('Main window is closed.');
-        return false;
-    }); 
-});
+let initButton = document.getElementById('init-btn');
+initButton.addEventListener('click', initFunction);
+
+let wasteButton = document.getElementById('proj-wastemodule');
+wasteButton.addEventListener('click', win2.loadWasteModule());

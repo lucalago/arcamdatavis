@@ -1,0 +1,12 @@
+#proj-mainscreen, #proj-wastemodule {
+    margin: 0;
+    padding: 0;
+}
+#proj-wastemodule {
+    display: none;
+}
+h1 {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
