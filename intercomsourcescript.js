@@ -1,7 +1,7 @@
 var win2;
 
 function openSecondaryWindow() {
-    return win2 = window.open('https://lucalago.github.io/arcamdatavis/projection.html', 'secondary', 'width=1920,height=1080');
+    return win2 = window.open('/projection.html', 'secondary', 'width=600,height=600');
 }
 
 function flash() {
@@ -22,18 +22,4 @@ $(function() {
         else alert('The secondary window is not open.');
         return false;
     });
-});
-
-var i = 0;
-
-function increment() {
-    $('span').text(++i + ' time' + (i == 1 ? '' : 's'));
-}
-
-$(function() {
-    $('a').click(function() {
-       if (opener) opener.flash();
-        else alert('Main window is closed.');
-        return false;
-    }); 
 });
