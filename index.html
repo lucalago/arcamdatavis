@@ -2,34 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="touch-style.css">
 
-    <title>WIN1</title>
+    <title>ARCAM TOUCHSCREEN</title>
 </head>
 <body>
+    <canvas id="gradient-canvas" data-transition-in>
+    </canvas>
     <section id="init">
         <div id="init-container">
             <h1 id="init-h1">PRESS THE BUTTON TO SET<br>THE INSTALLATION TO THE INITIAL SCREEN</h1>
-            <button class="nav-button" id="init-btn" href="#mainscreen">INITIALIZE</button>
+            <button class="nav-button" id="init-btn" href="#welcome">INITIALIZE</button>
         </div> 
     </section>
-    <section id="mainscreen">
-        <div id="nav-dashboard">
-            <button class="nav-button" id="" href="#wastemodule">WASTE FLOW</button>
-            <button class="nav-button" id="" href="#init">BACK TO INIT</button>
-        </div>
-    </section>
-    <section id="wastemodule">
-        <div id="nav-dashboard">
-            <button class="nav-button" id="" href="#mainscreen">BACK TO DASHBOARD</button>
+
+    <!-- DIV FOR NAV BAR WITH HELP AND HOME -->
+
+    <div class="button-nav-bar">
+        <button id="help-btn"><img src="assets/help-web-button.svg"></button>
+        <button id="home-btn"><img src="assets/home-web-button.svg"></button>
+    </div>
+    
+    <!-- 0 - CHOOSE PATH FREE EXPLORE / GUIDED -->
+    <section id="welcome">
+        <div id="nav-container">
+            <button class="nav-button" id="data-discovery-btn" href="#data-discovery">NAVIGATE THROUGH DATA</button>
+            <button class="nav-button" id="intro-btn" href="#begin-guided-experience">GUIDED EXPERIENCE</button>
         </div>
     </section>
 
+    <!-- SECTIONS FOR GUIDED PATH -->
 
-<script src="scripts.js"></script>
+    <!-- 1 - INTRODUCTION - CIRCULARITY -->
+    <section id="begin-guided-experience">
+        <div class="content-container" id="quizz">
+            <h1>"To become a thriving and inclusive city, we need to make our economy circular."</h1>
+            <p>What is the definition of a doughnut economy?</p>
+        </div>
+        <div id="nav-container">
+            <button class="nav-button" id="citizen-quotes-btn" href="#citizen-quotes">SEE WHAT'S NEXT</button>
+        </div>
+    </section>
+
+    <!-- 2 - CITIZEN QUOTES - WOULD YOU DO THIS? -->
+    <section id="citizen-quotes">
+        <div class="content-container" id="citizen-quotes-container">
+            <h1>Would you consider doing any of these?</h1>
+        </div>
+        <div id="nav-container">
+            <button class="nav-button" id="introduce-value-chains-btn" href="#introduce-vcs">LET'S CONTINUE</button>
+        </div>
+    </section>
+
+    <!-- 3 - INTRODUCING 3 VALUE CHAINS -->
+    <section id="introduce-vcs">
+        <div class="content-container" id="value-chains-container">
+            <p><strong>Built environment</strong> - how we building and construct our city<wbr><strong>Food & organic waste</strong> - the food we import, grow, eat and throw away<wbr><strong>Consumer goods</strong> - products we use from a t-shirt to a mobile phone.<wbr><p>
+            <p>"We have chosen to focus on these value chains to shape the circular economy because of their economic significance to the city, their impact on ecology and climate and the opportunities for Amsterdam to exert influence."</p>
+            <p> Sarah, 24 years, student in HvA</p>
+        </div>
+        <div class="visuals-container" id="character-intro-container">
+            <img src="assets/" id="character01">
+        </div>
+        <div id="nav-container">
+            <button class="nav-button" id="broad-data-vcs-btn" href="#broad-data-vcs">EXPLORE VALUE CHAINS</button>
+        </div>
+    </section>
+
+    <!-- 4 - BROAD DATA OF 3 VALUE CHAINS -->
+    <section id="broad-data-vcs">
+        <div id="nav-container">
+            <button class="nav-button" id="construc-sector-btn" href="#construction-sector">THE CONSTRUCTION SECTOR</button>
+        </div>
+    </section>
+
+    <!-- 5 - CONSTRUCTION SECTOR -->
+    <section id="construction-sector">
+        <div id="nav-container">
+            <button class="nav-button" id="food-sector-btn" href="#food-sector">VIEW FOOD SECTOR</button>
+        </div>
+    </section>
+
+    <!-- 6 - FOOD SECTOR -->
+    <section id="food-sector">
+        <div id="nav-container">
+            <button class="nav-button" id="consumer-goods-btn" href="#consumer-goods-sector">VIEW CONSUMER GOODS</button>
+        </div>
+    </section>
+
+    <!-- 7 - CONSUMER GOODS SECTOR -->
+    <section id="consumer-goods-sector">
+        <div id="nav-container">
+            <button class="nav-button" id="speculative-future-btn" href="#speculative-future">SEE THE FUTURE</button>
+        </div>
+    </section>
+
+    <!-- 8 - SPECULATIVE FUTURE -->
+    <section id="speculative-future">
+        <div id="nav-container">
+            <button class="nav-button" id="commit-future-btn" href="#commit-future">AND WHAT?</button>
+        </div>
+    </section>
+
+    <!-- 9 - COMMITMENT TO FUTURE -->
+    <section id="commit-future">
+        <div id="nav-container">
+            <button class="nav-button" id="get-involved-btn" href="#get-involved">GET INVOLVED</button>
+        </div>
+    </section>
+
+    <!-- 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START -->
+    <section id="get-involved">
+        <div id="nav-container">
+            <button class="nav-button" id="to-home-btn" href="#welcome">TO HOME SCREEN</button>
+        </div>
+    </section>
+   
+    <!-- SECTIONS FOR DATA DISCOVERY PATH -->
+
+    <!-- 11 - MAIN PAGE DATA DISCOVERY -->
+    <section id="data-discovery">
+        <div id="nav-container">
+            <button class="nav-button" id="data-X-btn" href="#data1">DATA 1</button>
+        </div>
+    </section>
+
+    <!-- DIVS OF DIALOGUES FOR HELP AND HOME BUTTONS -->
+
+    <!-- HELP DIALOGUE -->
+    <div id="help-dialogue">
+        <button id="close-help-btn">X Close</button>
+        <h4>Heeeelp!</h4>
+        <h5>How do I get around?</h5>
+        <p id="help-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis dui lectus, eu hendrerit mi sodales non. In dolor quam, maximus vel bibendum ut, viverra a odio. Morbi laoreet non. </p>
+    </div>
+
+    <!-- HOME DIALOGUE -->
+    <div id="home-dialogue">
+        <h5>Are you sure you want to go back to the home screen?</h5>
+        <div id="home-dialogue-btns">
+            <button class="dialogue-btn" id="confirm-home-btn">YES<br>Take me back.</button>
+            <button class="dialogue-btn" id="close-home-btn">NO<br>Continue exploration.</button>
+        </div>
+    </div>
+
+<script src="touchscreenscript.js"></script>
+<script src="projectionscript.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,131 @@
+body {
+    min-width: 1920px;
+    min-height: 1080px;
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0;
+    padding: 0;
+}
+
+/* STYLES FOR INITILIZATION OF SETUP */
+
+#init-container {
+    flex-direction: column !important;
+    z-index: 0;
+}
+#init-container, #nav-container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    width: 1920px;
+    height: 1080px;
+    align-items: center;
+    text-align: center;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#init-container > #init-h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+#init-container > #init-btn {
+    margin: 0 auto;
+    margin-left: auto;
+}
+/* END OF THIS SECTION */
+
+/* STYLES FOR HOME/HELP NAV BAR AND DIALOGUES */
+
+.button-nav-bar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    padding: 20px 20px 20px 20px;
+    background-color: #7a8dfe;
+    border-radius: 0 0 0 40px;
+    box-shadow: 0px 0px 60px 20px #4661faa2;
+}
+.button-nav-bar #help-btn, .button-nav-bar #home-btn {
+    background-color: rgba(0,0,0,0);
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#help-dialogue {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    color: #000000 !important;
+    z-index: 10000;
+    transition: 0.5s;
+}
+#help-paragraph {
+    margin: 60px 80px 0;
+}
+#close-help-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 20px;
+    font-size: 3rem;
+    margin: 60px 0 0 80px;
+}
+#home-dialogue {
+    display: none;
+    z-index: 10000;
+    width: 1200px;
+    height: 800px;
+    position: fixed;
+    top: 140px;
+    left: 360px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 10px 80px #1e0558;
+    transition: 0.5s;
+}
+#home-dialogue h5 {
+    margin-top: 300px;
+    text-align: center;
+}
+div #home-dialogue-btns {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.dialogue-btn {
+    width: 40%;
+    border-radius: 2px;
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+#confirm-home-btn {
+    background-color: #fd9b24;
+    color: white;
+    border: solid 3px #b95306;
+    margin-right: 10px;
+}
+#close-home-btn {
+    background-color: #6e6e6e;
+    color: white;
+    border: solid 3px #414141;
+    margin-left: 10px;
+}
+/* END OF THIS SECTION */
+
+#nav-container {
+    align-items: flex-end;
+}

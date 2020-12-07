@@ -1,14 +1,53 @@
-#proj-mainscreen, #proj-wastemodule {
+body {
+    min-width: 1280px !important;
+    min-height: 800px !important;
+    max-width: 1280px !important;
+    max-height: 800px !important;
+}
+#proj-welcome, #proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future, #proj-data-dashboard {
+    display: flex;
+    width: 1280px;
+    height: 800px;
     margin: 0;
     padding: 0;
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
-#proj-wastemodule {
+#proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future, #proj-data-dashboard {
     display: none;
 }
-h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    color: rgb(255, 251, 35);;
-    line-height: 3rem;
+
+/*  SECTION 01 - WELCOME  */
+#proj-welcome {
+    background-color: #7a8dfe;
+}
+#welcome-text-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 60%;
+    background: none;
+}
+#welcome-text-div > p {
+    width: 85%;
+    color: white;
+}
+#welcome-visuals-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+#welcome-visuals-div img {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

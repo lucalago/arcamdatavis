@@ -2,28 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="proj-style.css">
-    <script src="scripts.js"></script>
 
-    <title>Win2</title>
+    <title>ARCAM PROJECTION</title>
 </head>
 <body>
-<section id="proj-mainscreen">
-    <div>
-        <h1>THIS IS OUR TEST MAIN SCREEN PROJECTION</h1>
-    </div>
-</section>
-<section id="proj-wastemodule">
-    <div>
-        <h1>WASTE FLOW</h1>
-    </div>
-</section>
+    <canvas id="gradient-canvas" data-transition-in>
+    </canvas>
 
+    <!-- SECTIONS FOR GUIDED PATH -->
+
+    <!-- 0 - WELCOME CONTENT -->
+    <section id="proj-welcome">
+        <div id="welcome-text-div">
+            <h1 class="h1-title">We, Amsterdam are on our way to becoming a doughnut city by 2050</h1>
+            <p>But we need your help. We want your feedback and your participation in reaching our goals.</p>
+        </div>
+        <div id="welcome-visuals-div">
+            <img src="/assets/Netherlands-Overview-Map.png" alt="Netherlands Map" id="map-static">
+        </div>
+    </section>
+
+    <!-- 1 - INTRODUCTION - CIRCULARITY -->
+    <section id="proj-intro-concept">
+        <div>
+            <h1 class="h1-title">We need to make a change</h1>  
+            <p>Our way of producing and consuming has a tremendous impact on the supplies of scarce raw materials, on our climate and on our living environment.</p>          
+        </div>
+        <div id="intro-visuals-div">
+            <img src="/assets/Netherlands-Overview-Map.png" alt="Netherlands Map" id="map-static">
+        </div>
+    </section>
+
+    <!-- 2 - CITIZEN QUOTES - WOULD YOU DO THIS? -->
+    <section id="proj-citizen-quotes">
+        <div>
+            <h1 class="h1-title">We're trying to make Amsterdam a thriving place for our people, whilst creating a thriving planet for everyone</h1>
+            <p>What policies & strategies would you want us to implement?</p>
+        </div>
+    </section>
+
+    <!-- 3 - INTRODUCING 3 VALUE CHAINS -->
+    <section id="proj-value-chains">
+        <div>
+            <h1 class="h1-title">We're focusing on three areas called Value Chains</h1>
+            <h2 class="h2-title">Built environment<br>Food & organic waste<br>Consumer Goods</h2>
+        </div>
+        <div id="introvcs-visuals-div">
+            <img src="/assets/Netherlands-Overview-Map.png" alt="Netherlands Map" id="map-static">
+        </div>
+    </section>
+
+    <!-- 4 - BROAD DATA OF 3 VALUE CHAINS -->
+    <section id="proj-broad-data-vcs">
+        <div>
+            <h1 class="h1-title">Understanding how much raw materials we consume each year is key</h1>
+        </div>
+        <div>
+            <p>Each year, we consume over 1,216 kilo tonnes of raw and other materials.<br><br>This is comparable to the <strong>weight of 8.5 cruise ships</strong> like the MSC Splendida.</p>
+        </div>
+        <div id="">
+
+        </div>
+    </section>
+
+    <!-- 5 - CONSTRUCTION SECTOR -->
+    <section id="proj-construction-sector">
+        <div>
+            <h1 class="h1-title">We are playing an important role in making construction waste more circular</h1>
+        </div>
+    </section>
+
+    <!-- 6 - FOOD SECTOR -->
+    <section id="proj-food-sector">
+        <div>
+            <h1 class="h1-title">We create 165kt of annual consumption of meat and dairy products</h1>
+            <p>Food waste is estimated to be 30% worldwide, and 20% in the Netherlands. Specifically for meat and dairy, the waste percentages are 10% and 8%, respectively.</p>
+        </div>
+    </section>
+
+    <!-- 7 - CONSUMER GOODS SECTOR -->
+    <section id="proj-consumer-goods-sector">
+        <div>
+            <h1 class="h1-title">12.4kt of electronics are consumed every year, it's about 100 times as heavy as a Blue Whale</h1>
+            <p>The environmental impact of electronics has several dimensions. The CO2 impact of one laptop if equivalent to that of seven washing machines.</p>
+        </div>
+    </section>
+
+    <!-- 8 - SPECULATIVE FUTURE -->
+    <section id="proj-speculative-future">
+        <div>
+            <h1 class="h1-title">Now, imagine you are in 2050.</h1>
+            <h1 class="h1-title">We've achieved our goals.</h1>
+            <h1 class="h1-title">What does your Amsterdam world look like?</h1>
+        </div>
+    </section>
+
+    <!-- 9 - COMMITMENT TO FUTURE -->
+    <section id="proj-commit-future">
+        <div>
+            <h1 class="h1-title">Put your commitments in a time capsule!</h1>
+            <p>Do you want a future scenario like we showed you before? We want to make it happen, but we also need your help.<br><br>Things won't be a smooth journey!</p>
+        </div>
+    </section>
+
+    <!-- 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START -->
+    <section id="proj-get-involved">
+        <div>
+            <h1 class="h1-title">ENGAGE WITH YOUR COMMUNITY</h1>
+        </div>
+    </section>
+
+    <!-- SECTIONS FOR DATA DISCOVERY PATH -->
+
+    <!-- 11 - MAIN PAGE DATA DISCOVERY -->
+    <section id="proj-data-dashboard">
+        <div>
+            <h1 class="h1-title">Data Discovery</h1>
+        </div>
+    </section>
+
+<script src="projectionscript.js"></script>
 
 </body>
 </html>
