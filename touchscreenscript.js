@@ -132,6 +132,9 @@ commitFutureButton.addEventListener('click', function(){win2.startCommitFutureMo
 // EXECUTE 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START
 let getInvolvedButton = document.getElementById('get-involved-btn');
 getInvolvedButton.addEventListener('click', function(){win2.startGetInvolvedModule()});
+let toHomeButton = document.getElementById('to-home-btn');
+toHomeButton.addEventListener('click', function(){win2.resetProjection()});
+
 
 // EXECUTE 11 - MAIN PAGE DATA DISCOVERY
 let dataDiscoveryButton = document.getElementById('data-discovery-btn');
