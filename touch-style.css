@@ -5,6 +5,8 @@ body {
     max-height: 1080px;
     margin: 0;
     padding: 0;
+    user-select: none;
+    user-zoom: none;
 }
 
 /* STYLES FOR INITILIZATION OF SETUP */
@@ -12,18 +14,27 @@ body {
 #init-container {
     flex-direction: column !important;
     z-index: 0;
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 #init-container, #nav-container {
     display: flex !important;
     flex-direction: row;
     justify-content: center;
-    width: 1920px;
-    height: 1080px;
     align-items: center;
     text-align: center;
-    z-index: 0;
+}
+#nav-container {
+    align-items: flex-end;
+    z-index: 10000;
+    pointer-events: all;
+    width: 1920px;
+    height: 300px;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
 }
 #init-container > #init-h1 {
@@ -44,9 +55,9 @@ body {
     z-index: 1000;
     top: 0;
     right: 0;
-    padding: 20px 20px 20px 20px;
-    background-color: #7a8dfe;
-    border-radius: 0 0 0 40px;
+    padding: 20px 20px 35px 35px;
+    background-color: #3D00C9;
+    border-radius: 0 0 0 50px;
     box-shadow: 0px 0px 60px 20px #4661faa2;
 }
 .button-nav-bar #help-btn, .button-nav-bar #home-btn {
@@ -57,7 +68,6 @@ body {
     margin-right: 20px;
     margin-top: 10px;
 }
-
 #help-dialogue {
     position: fixed;
     top: 0;
@@ -126,6 +136,160 @@ div #home-dialogue-btns {
 }
 /* END OF THIS SECTION */
 
-#nav-container {
-    align-items: flex-end;
+/* OVERALL STYLES */
+
+h1 {
+    width: 70%;
+}
+
+/* CONTENT DIV STYLE */
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+/* QUIZZ STYLE */
+
+.answeritem {
+    width: 70%;
+    margin: 30px auto 0;
+    padding: 25px 0 25px 50px;
+    border: 1px solid #a8a8a8;
+    border-left: 10px solid #3D00C9;
+    background-color: white;
+    z-index: 10000;
+    color: black;
+    text-align: left;
+    font-size: 1.7rem;
+    outline: none !important;
+    border-radius: 8px;
+    box-shadow: 3px 3px 30px #6b40d1;
+    opacity: 1;
+}
+.correctanswer {
+    border: 2px solid rgb(0, 202, 0);
+    border-left: 10px solid rgb(0, 202, 0);
+    color: rgb(0, 202, 0);
+    -webkit-animation: fadein ease-in 2s;
+}
+.wronganswer {
+    border: 2px solid rgb(212, 38, 15);
+    border-left: 10px solid rgb(212, 38, 15);
+    color: rgb(212, 38, 15);
+    -webkit-animation: fadein ease-in 2s;
+}
+.answeritem-titlesection {
+    display: flex;
+    flex-direction: row;
+}
+.answernumber {
+    font-weight: 600;
+}
+#correct-label, #wrong-label1, #wrong-label2 {
+    display: none;
+    margin-left: 50px;
+    font-weight: 600;
+}
+#correct-label {
+    color: rgb(0, 202, 0);
+}
+#wrong-label1, #wrong-label2 {
+    color: rgb(212, 38, 15);
+}
+.label-display {
+    display: inline-block !important;
+    z-index: 10000;
+}
+.not-clickable {
+    pointer-events: none;
+}
+#answer1 {
+    -webkit-animation: fadein1 ease-in 2s;
+}
+#answer2 {
+    -webkit-animation: fadein2 ease-in 2.3s;
+}
+#answer3 {
+    -webkit-animation: fadein3 ease-in 2.6s;
+}
+
+/* CARD STYLES */
+
+.card-deck, .card, .card-text, .card a {
+    display: flex;
+    flex-direction: row;
+}
+.card-deck {
+    align-items: center;
+    width: 80%;
+    height: 16%;
+    margin: 20px auto 0;
+    padding: 0;
+    -webkit-animation: fadein 2s;
+}
+.card {
+    width: 500px;
+    height: 150px;
+    margin: 10px 0 0 0px;
+    border: 1px solid #a8a8a8;
+    border-left: 10px solid #fd9b24;
+    background-color: white;
+    z-index: 10000;
+    color: black;
+    text-align: left;
+    font-size: 1.7rem;
+    outline: none !important;
+    border-radius: 8px;
+    box-shadow: 3px 3px 30px #6b40d1;
+    transition: all 0.3s ease-in;
+}
+.card-text {
+    color: #000000 !important;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+.card a {
+    min-width: 80px;
+    height: 146px;
+    border-right: solid 1px #d3d3d3;
+    justify-content: center;
+    align-items: center;
+}
+.fa-heart {
+    font-size: 3rem;
+    color: rgb(122, 122, 122);
+}
+
+/* ANIMATIONS */
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein1 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein2 {
+    0% { opacity: 0; }
+    30%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes fadein3 {
+    0% { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
 }

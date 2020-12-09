@@ -14,9 +14,9 @@ h1, h3, h4, h5, h6, p, button {
     font-family: 'Montserrat', sans-serif;
 }
 h1 {
-    color: #fd9b24 !important;
+    color: #ffffff !important;
     font-family: 'Lora', serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3rem;
     margin: 60px 0 0 80px;
     line-height: 4rem;
@@ -66,18 +66,18 @@ p {
     text-align: justify; 
 }
 .nav-button {
-    border-radius: 2px;
+    border-radius: 10px;
     font-weight: 800;
     text-align: center;
-    background-color: #fd9b24;
+    background-color: #00E2BF;
     color: white;
-    border: solid 3px #b95306;
-    padding: 3rem 4rem;
-    font-size: 2rem;
+    border: solid 3px #089297;
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
     letter-spacing: 1rem;
-    margin: 0 10px 80px;
+    margin: 0 10px 60px;
     box-shadow: 10px 10px 30px #1e0558;
-    z-index: 0;
+    z-index: 10000;
 }
 .nav-button:hover {
     color: white;

@@ -64,6 +64,7 @@ function goHome() {
     document.getElementById('welcome').style.display = "block";
     currentSectionId = 'welcome';
     win2.resetProjection();
+    resetQuizz()
 }
 
 
@@ -99,6 +100,7 @@ introButton.addEventListener('click', function(){win2.startIntroductionModule()}
 
 // EXECUTE 2 - CITIZEN QUOTES - WOULD YOU DO THIS?
 let citizenQuotesButton = document.getElementById('citizen-quotes-btn');
+citizenQuotesButton.addEventListener('click', resetQuizz);
 citizenQuotesButton.addEventListener('click', function(){win2.startCitizenQuotesModule()});
 
 // EXECUTE 3 - INTRODUCING 3 VALUE CHAINS
@@ -144,3 +146,54 @@ dataDiscoveryButton.addEventListener('click', function(){win2.startDataDashboard
 // remember to add number to the end of the BTN so you can extract that
 // from an array of items, to facilitate the code
 // loop for the button pressing
+
+// QUIZZ FUNCTIONALITY
+
+let answer1 = document.getElementById('answer1');
+let answer2 = document.getElementById('answer2');
+let answer3 = document.getElementById('answer3');
+let wrongLabel1 = document.getElementById('wrong-label1');
+let wrongLabel2 = document.getElementById('wrong-label2');
+let correctLabel = document.getElementById('correct-label');
+
+answer1.addEventListener('click', wrongAnswer1);
+answer2.addEventListener('click', correctAnswer);
+answer3.addEventListener('click', wrongAnswer2);
+
+function correctAnswer(){
+    answer2.classList.add('correctanswer');
+    answer1.classList.add('wronganswer');
+    answer3.classList.add('wronganswer');
+    correctLabel.classList.add('label-display');
+}
+
+function wrongAnswer1(){
+    answer1.classList.add('wronganswer');
+    answer2.classList.add('correctanswer');
+    answer3.classList.add('wronganswer');
+    answer3.classList.add('not-clickable');
+    correctLabel.classList.add('label-display');
+    wrongLabel1.classList.add('label-display');
+}
+
+function wrongAnswer2(){
+    answer1.classList.add('wronganswer');
+    answer1.classList.add('not-clickable');
+    answer3.classList.add('wronganswer');
+    answer2.classList.add('correctanswer');
+    correctLabel.classList.add('label-display');
+    wrongLabel2.classList.add('label-display');
+}
+
+function resetQuizz(){
+    answer1.classList.remove('wronganswer');
+    answer3.classList.remove('wronganswer');
+    answer2.classList.remove('correctanswer');
+    answer1.classList.remove('not-clickable');
+    answer2.classList.remove('not-clickable');
+    answer3.classList.remove('not-clickable');
+    correctLabel.classList.remove('label-display');
+    wrongLabel1.classList.remove('label-display');
+    wrongLabel2.classList.remove('label-display');
+}
+

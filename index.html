@@ -6,8 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="touch-style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
 
     <title>ARCAM TOUCHSCREEN</title>
 </head>
@@ -43,6 +45,27 @@
         <div class="content-container" id="quizz">
             <h1>"To become a thriving and inclusive city, we need to make our economy circular."</h1>
             <p>What is the definition of a doughnut economy?</p>
+            <button class="answeritem wrong" id="answer1">
+                <div class="answeritem-titlesection">
+                    <div class="answernumber">Option 1</div>
+                    <div class="" id="wrong-label1">Wrong answer!</div>
+                </div>
+                <div class="answertext">A model based in designing circular products</div>
+            </button>
+            <button class="answeritem correct" id="answer2">
+                <div class="answeritem-titlesection">
+                    <div class="answernumber">Option 2</div>
+                    <div class="" id="correct-label">Correct answer!</div>
+                </div>
+                <div class="answertext">A model based on the principles of designing out waste and pollution</div>
+            </button>
+            <button class="answeritem wrong" id="answer3">
+                <div class="answeritem-titlesection">
+                    <div class="answernumber">Option 3</div>
+                    <div class="" id="wrong-label2">Wrong answer!</div>
+                </div>
+                <div class="answertext">A model where all the factors of production are controlled by the state</div>
+            </button>
         </div>
         <div id="nav-container">
             <button class="nav-button" id="citizen-quotes-btn" href="#citizen-quotes">SEE WHAT'S NEXT</button>
@@ -52,7 +75,50 @@
     <!-- 2 - CITIZEN QUOTES - WOULD YOU DO THIS? -->
     <section id="citizen-quotes">
         <div class="content-container" id="citizen-quotes-container">
-            <h1>Would you consider doing any of these?</h1>
+            <h1>What policies & strategies do you think we could adopt to become a doughnut city?</h1>
+            <h2>Here are some examples of what other people think. Tap to like what you like.</h2>
+            <div class="card-deck row-cols-3">
+                <div class="card">
+                      <a href="#"><i class="far fa-heart"></i></a>
+                      <p class="card-text">30 hours work week</p>
+                </div>
+                <div class="card">
+                      <a href="#"><i class="far fa-heart"></i></a>
+                      <p class="card-text">Development of city farms</p>
+                </div>
+                <div class="card">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <p class="card-text">new constructions energy<br> & water position </p>
+              </div>
+            </div>
+            <div class="card-deck row-cols-3">
+                <div class="card">
+                      <a href="#"><i class="far fa-heart"></i></a>
+                      <p class="card-text">Recycling done inside<br> city limits</p>
+                </div>
+                <div class="card">
+                      <a href="#"><i class="far fa-heart"></i></a>
+                      <p class="card-text">All rooftops to have solar panels</p>
+                </div>
+                <div class="card">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <p class="card-text">Prohibition of single use plastics</p>
+              </div>
+            </div>
+            <div class="card-deck row-cols-3">
+                <div class="card">
+                      <a href="#"><i class="far fa-heart"></i></a>
+                      <p class="card-text">Recycling is last resort - focus on repair and repurpose</p>
+                </div>
+                <div class="card">
+                      <a href="#"><i class="far fa-heart"></i></a>
+                      <p class="card-text">Personal motorised transport is limited</p>
+                </div>
+                <div class="card">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <p class="card-text">Break up of mega farms</p>
+              </div>
+            </div>
         </div>
         <div id="nav-container">
             <button class="nav-button" id="introduce-value-chains-btn" href="#introduce-vcs">LET'S CONTINUE</button>
@@ -76,6 +142,12 @@
 
     <!-- 4 - BROAD DATA OF 3 VALUE CHAINS -->
     <section id="broad-data-vcs">
+        <div class="content-container">
+            <p>Construction is the biggest generator of waste, with 7% of companies accounting for the vast majority of this. However, it's also very important for the <strong>growth of the economy</strong>, and it employs <strong>10% of the total population</strong>.</p>
+        </div>
+        <div class="visuals-container" id="character-broad-data-container">
+            <img src="assets/" id="character02">
+        </div>
         <div id="nav-container">
             <button class="nav-button" id="construc-sector-btn" href="#construction-sector">THE CONSTRUCTION SECTOR</button>
         </div>
@@ -83,6 +155,13 @@
 
     <!-- 5 - CONSTRUCTION SECTOR -->
     <section id="construction-sector">
+        <div class="content-container">
+            <p>“More construction and demolition waste is imported into the MRA than is exported to other areas. This gives Amsterdam an important role in waste management and ensuring that these materials can be used as secondary raw material alternatives, instead of being discarded.”</p>
+            <p>John, 33 years, construction worker</p>
+        </div>
+        <div class="visuals-container" id="character-construction-container">
+            <img src="assets/" id="character03">
+        </div>
         <div id="nav-container">
             <button class="nav-button" id="food-sector-btn" href="#food-sector">VIEW FOOD SECTOR</button>
         </div>
@@ -90,6 +169,14 @@
 
     <!-- 6 - FOOD SECTOR -->
     <section id="food-sector">
+        <div class="content-container">
+            <p>“We will initiate the transition from consumption of animal proteins to consumption of vegetable proteins before 2023.<br><br>
+            Food waste by consumers and businesses will have been reduced by 50% by 2030. This will lead to a substantial reduction in the ecological footprint of our food supply by 2030.”</p>
+            <p>Jimena, 43 years, local farmer</p>
+        </div>
+        <div class="visuals-container" id="character-food-container">
+            <img src="assets/" id="character04">
+        </div>
         <div id="nav-container">
             <button class="nav-button" id="consumer-goods-btn" href="#consumer-goods-sector">VIEW CONSUMER GOODS</button>
         </div>
@@ -97,6 +184,14 @@
 
     <!-- 7 - CONSUMER GOODS SECTOR -->
     <section id="consumer-goods-sector">
+        <div class="content-container">
+            <p>“From 2025 onwards, products that can no longer be repaired must be upcycled.<br><br>
+            With the help of public-private partnerships, by 2025 we want to be able to collect and separate textiles*, electronics, furniture and plastics so that they can be reused, repaired or otherwise upcycled.”</p>
+            <p>Silvia, 28 years, fashion designer</p>
+        </div>
+        <div class="visuals-container" id="character-consumer-goods-container">
+            <img src="assets/" id="character05">
+        </div>
         <div id="nav-container">
             <button class="nav-button" id="speculative-future-btn" href="#speculative-future">SEE THE FUTURE</button>
         </div>
@@ -104,6 +199,13 @@
 
     <!-- 8 - SPECULATIVE FUTURE -->
     <section id="speculative-future">
+        <div class="content-container">
+            <p>“The year is 2050, and Amsterdam is fully a doughnut city! The site of cars in the city is rare, with the majority of the city bicycle, walking and public transport routes. This has meant the number of parks and green spaces has increased 10x comparred to 30 years ago!”</p>
+            <p>Name, XX years, profession</p>
+        </div>
+        <div class="visuals-container" id="character-consumer-goods-container">
+            <img src="assets/" id="character06">
+        </div>
         <div id="nav-container">
             <button class="nav-button" id="commit-future-btn" href="#commit-future">AND WHAT?</button>
         </div>

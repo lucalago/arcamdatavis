@@ -3,6 +3,8 @@ body {
     min-height: 800px !important;
     max-width: 1280px !important;
     max-height: 800px !important;
+    user-select: none;
+    user-zoom: none;
 }
 #proj-welcome, #proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future, #proj-data-dashboard {
     display: flex;
@@ -31,6 +33,10 @@ body {
     width: 60%;
     background: none;
 }
+#welcome-text-div > h1 {
+    line-height: 3.8rem !important;
+    font-size: 4rem;
+}
 #welcome-text-div > p {
     width: 85%;
     color: white;
@@ -39,15 +45,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1280px;
+    height: 800px;
     z-index: 100;
 }
 #welcome-visuals-div img {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 100%;
-    height: 100%;
+    left: 345px;
+    max-width: 1200px;
+    height: 800px;
     object-fit: contain;
 }
