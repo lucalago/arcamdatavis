@@ -7,6 +7,7 @@ body {
     padding: 0;
     user-select: none;
     user-zoom: none;
+    touch-action: none;
 }
 
 /* STYLES FOR INITILIZATION OF SETUP */
@@ -179,13 +180,11 @@ h1 {
     border: 2px solid rgb(0, 202, 0);
     border-left: 10px solid rgb(0, 202, 0);
     color: rgb(0, 202, 0);
-    -webkit-animation: fadein ease-in 2s;
 }
 .wronganswer {
     border: 2px solid rgb(212, 38, 15);
     border-left: 10px solid rgb(212, 38, 15);
     color: rgb(212, 38, 15);
-    -webkit-animation: fadein ease-in 2s;
 }
 .answeritem-titlesection {
     display: flex;
@@ -268,9 +267,13 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.fa-heart {
-    font-size: 3rem;
-    color: rgb(122, 122, 122);
+.card a :hover {
+    outline: none !important;
+}
+.card a img {
+    width: 3rem;
+    transition: all 0.3s ease-in;
+    -webkit-animation: likesize 0.3s;
 }
 
 /* ANIMATIONS */
@@ -293,3 +296,8 @@ h1 {
     50%  { opacity: 0; }
     100% { opacity: 1; }
 }
+@keyframes likesize {
+    0% {width:3rem;}
+    50% {width:3.2rem;}
+    100% {width:3rem;}
+  }

@@ -1,3 +1,5 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 var currentSectionId = 'init';
 var homeSection = document.getElementById("welcome");
 
@@ -197,3 +199,19 @@ function resetQuizz(){
     wrongLabel2.classList.remove('label-display');
 }
 
+
+console.log(hearts);
+for(var i = 0; i < hearts.length; i++){
+    hearts.addEventListener('click', function(e){
+        var itemLiked = false;
+        var heartImg = document.getElementById('heartimg');
+        console.log(hearts[i]);
+      if(itemLiked = false){
+        this.src = "assets/heart-solid.svg";
+        itemLiked = true;
+      }  else {
+        this.src = "assets/heart.svg";
+        itemLiked = false;
+      }
+    })
+}
