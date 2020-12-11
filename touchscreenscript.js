@@ -96,8 +96,12 @@ function initFunction(){
 let initButton = document.getElementById('init-btn');
 initButton.addEventListener('click', initFunction);
 
-// EXECUTE 1 - INTRODUCTION - CIRCULARITY
-let helpguideButton = document.getElementById('intro-btn');
+// EXECUTE 00 - EXPERIENCE ALERT
+let experienceAlertButton = document.getElementById('alert-btn');
+experienceAlertButton.addEventListener('click', function(){win2.startExperienceAlertModule()});
+
+// EXECUTE 0 - HELP GUIDE
+let helpguideButton = document.getElementById('ok-alert-btn');
 helpguideButton.addEventListener('click', function(){win2.startHelpGuideModule()});
 
 // EXECUTE 1 - INTRODUCTION - CIRCULARITY

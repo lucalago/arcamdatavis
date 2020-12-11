@@ -33,8 +33,19 @@
     <!-- 00 - CHOOSE PATH FREE EXPLORE / GUIDED -->
     <section id="welcome">
         <div id="nav-container">
-            <button class="nav-button" id="data-discovery-btn" href="#data-discovery">NAVIGATE THROUGH DATA</button>
-            <button class="nav-button" id="intro-btn" href="#help-guide">GUIDED EXPERIENCE</button>
+            <!-- <button class="nav-button" id="data-discovery-btn" href="#data-discovery">NAVIGATE THROUGH DATA</button> -->
+            <button class="nav-button" id="alert-btn" href="#experience-alert">GUIDED EXPERIENCE</button>
+        </div>
+    </section>
+
+    <!-- 00 - EXPERIENCE ALERT -->
+    <section id="experience-alert">
+        <div class="content-container">
+            <h1 id="alert-h1">How does this experience work?</h1>
+            <h2 id="alert-h2">This experience includes a projection and a touchscreen. Everytime you press the "Next" button, remind to look at the projector first and then at the touchscreen.</h2>
+        </div>
+        <div id="nav-container">
+            <button class="nav-button" id="ok-alert-btn" href="#help-guide">GOT IT!</button>
         </div>
     </section>
 
@@ -168,11 +179,16 @@
 
     <!-- 4 - BROAD DATA OF 3 VALUE CHAINS -->
     <section id="broad-data-vcs">
-        <div class="content-container">
-            <p>Construction is the biggest generator of waste, with 7% of companies accounting for the vast majority of this. However, it's also very important for the <strong>growth of the economy</strong>, and it employs <strong>10% of the total population</strong>.</p>
-        </div>
-        <div class="visuals-container" id="character-broad-data-container">
-            <img src="assets/" id="character02">
+        <div id="character-broad-data-visuals">
+            <div id="wood-worker-broad-data">
+                <img id="character" src="assets/man2-woodworker.svg" alt="">
+                <p id="speech-wood-worker">So what is Amsterdam doing with all this construction waste?</p>
+            </div>
+            <div id="chef-broad-data">
+                <img id="character" src="assets/man3-chef.svg" alt="">
+                <p id="speech-chef">Construction is by far the biggest producer of waste, with only 7% of companies accounting for 70%.<br> 
+                However, it is very important for the economy. It also accounts for 10% of the employment.</p>
+            </div>
         </div>
         <div id="nav-container">
             <button class="nav-button" id="construc-sector-btn" href="#construction-sector">THE CONSTRUCTION SECTOR</button>
@@ -181,12 +197,15 @@
 
     <!-- 5 - CONSTRUCTION SECTOR -->
     <section id="construction-sector">
-        <div class="content-container">
-            <p>“More construction and demolition waste is imported into the MRA than is exported to other areas. This gives Amsterdam an important role in waste management and ensuring that these materials can be used as secondary raw material alternatives, instead of being discarded.”</p>
-            <p>John, 33 years, construction worker</p>
-        </div>
-        <div class="visuals-container" id="character-construction-container">
-            <img src="assets/" id="character03">
+        <div id="character-construction-visuals">
+            <div id="wood-worker-construction">
+                <img id="character" src="assets/man2-woodworker.svg" alt="">
+                <p id="speech-wood-worker">The MRA (metropolitan area of Amsterdam) imports more construction waste than it exports. This means that because we focus on breaking down the waste so that it can be used as secondary raw materials. This is instead of disposing of it we can play an important, leading role.</p>
+            </div>
+            <div id="chef-construction">
+                <img id="character" src="assets/man3-chef.svg" alt="">
+                <p id="speech-chef">OK Evi, but let me tell you about what we’re doing for food and organic waste!</p>
+            </div>
         </div>
         <div id="nav-container">
             <button class="nav-button" id="food-sector-btn" href="#food-sector">VIEW FOOD SECTOR</button>
@@ -195,13 +214,16 @@
 
     <!-- 6 - FOOD SECTOR -->
     <section id="food-sector">
-        <div class="content-container">
-            <p>“We will initiate the transition from consumption of animal proteins to consumption of vegetable proteins before 2023.<br><br>
-            Food waste by consumers and businesses will have been reduced by 50% by 2030. This will lead to a substantial reduction in the ecological footprint of our food supply by 2030.”</p>
-            <p>Jimena, 43 years, local farmer</p>
-        </div>
-        <div class="visuals-container" id="character-food-container">
-            <img src="assets/" id="character04">
+        <div id="character-food-visuals">
+
+            <div id="chef-food">
+                <img id="character" src="assets/man3-chef.svg" alt="">
+                <p id="speech-chef">There are two key initatives, the first is to transition away from animal proteins to vegetable. The objective is to consume a maximum of 40% animal and 60% plant-based proteins by 2050.<br><br>We’re also working on food waste, with the target to half food waste by consumers and businesses by 2030.</p>
+            </div>
+            <div id="woman-food">
+                <img id="character" src="assets/woman1-student.svg" alt="">
+                <p id="speech-woman">So you’re saying I should reduce the amount of meat and cheese I eat. How often do you eat meat or cheese?</p>
+            </div>
         </div>
         <div id="nav-container">
             <button class="nav-button" id="consumer-goods-btn" href="#consumer-goods-sector">VIEW CONSUMER GOODS</button>

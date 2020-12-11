@@ -161,14 +161,16 @@ h1 {
     z-index: 100;
 }
 
-/* HELP GUIDE STYLE */
-#help-guide-visuals {
+#intro-vcs-visuals, #help-guide-visuals, #character-broad-data-visuals, #character-construction-visuals, #character-food-visuals {
     position: fixed;
     top: 0;
     left: 0;
     min-width: 1980px;
     min-height: 1080px;
 }
+
+/* HELP GUIDE STYLE */
+
 #wood-worker-help-guide #character, #chef-help-guide #character, #woman-help-guide #character {
     position: fixed;
     min-width: 600px;
@@ -308,13 +310,6 @@ h1 {
 
 /* 3 - INTRODUCING 3 VALUE CHAINS  */
 
-#intro-vcs-visuals {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 1980px;
-    min-height: 1080px;
-}
 #wood-worker-intro-vcs #character, #woman-intro-vcs #character {
     position: fixed;
     min-width: 800px;
@@ -328,6 +323,57 @@ h1 {
 #woman-intro-vcs #character {
     bottom: 0px;
     left: -100px;
+}
+
+/* 4 - BROAD DATA OF 3 VALUE CHAINS */
+
+#wood-worker-broad-data #character, #chef-broad-data #character {
+    position: fixed;
+    min-width: 800px;
+    max-width: 800px;
+}
+#chef-broad-data #character {
+    bottom: -100px;
+    right: -200px;
+    transform: scaleX(-1);
+}
+#wood-worker-broad-data #character {
+    bottom: -300px;
+    left: 100px;
+}
+
+/* 5 - CONSTRUCTION SECTOR */
+
+#wood-worker-construction #character, #chef-construction #character {
+    position: fixed;
+    min-width: 800px;
+    max-width: 800px;
+}
+#chef-construction #character {
+    top: -300px;
+    right: 200px;
+    transform: scale(-1, -1);
+}
+#wood-worker-construction #character {
+    bottom: -300px;
+    left: -50px;
+}
+
+/* 6 - FOOD SECTOR */
+
+#chef-food #character, #woman-food #character {
+    position: fixed;
+    min-width: 800px;
+    max-width: 800px;
+}
+#chef-food #character {
+    bottom: 0px;
+    left: -200px;
+}
+#woman-food #character {
+    bottom: 0px;
+    right: -150px;
+    transform: scaleX(-1);
 }
 
 

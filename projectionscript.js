@@ -10,6 +10,16 @@ function killWelcomeModule (){
     document.getElementById('proj-welcome').style.display = 'none';
 }
 
+// EXECUTE 00 - EXPERIENCE ALERT
+function loadExperienceAlertModule (){
+    document.getElementById('proj-experience-alert').style.display = 'block';
+    currentProjection = 'proj-experience-alert';
+}
+
+function killExperienceAlertModule (){
+    document.getElementById('proj-experience-alert').style.display = 'none';
+}
+
 // EXECUTE 0 - HELP GUIDE
 function loadHelpGuideModule (){
     document.getElementById('proj-help-guide').style.display = 'block';
@@ -138,8 +148,13 @@ function startWelcomeModule(){
 
 // functions for Guided Experience
 
-function startHelpGuideModule(){
+function startExperienceAlertModule(){
     killWelcomeModule();
+    loadExperienceAlertModule();
+}
+
+function startHelpGuideModule(){
+    killExperienceAlertModule();
     loadHelpGuideModule();
 }
 
