@@ -8,6 +8,9 @@ body {
     user-select: none;
     user-zoom: none;
     touch-action: none;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* STYLES FOR INITILIZATION OF SETUP */
@@ -158,6 +161,35 @@ h1 {
     z-index: 100;
 }
 
+/* HELP GUIDE STYLE */
+#help-guide-visuals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 1980px;
+    min-height: 1080px;
+}
+#wood-worker-help-guide #character, #chef-help-guide #character, #woman-help-guide #character {
+    position: fixed;
+    min-width: 600px;
+    max-width: 600px;
+}
+#wood-worker-help-guide #character {
+    bottom: 100px;
+    left: 0;
+}
+#chef-help-guide #character {
+    bottom: -100px;
+    left: 750px;
+    transform: scaleX(-1);
+}
+#woman-help-guide #character {
+    bottom: 200px;
+    right: 0px;
+    transform: scaleX(-1);
+}
+
+/* 1 - INTRODUCTION - CIRCULARITY */
 /* QUIZZ STYLE */
 
 .answeritem {
@@ -221,6 +253,7 @@ h1 {
     -webkit-animation: fadein3 ease-in 2.6s;
 }
 
+/* 2 - CITIZEN QUOTES - WOULD YOU DO THIS? */
 /* CARD STYLES */
 
 .card-deck, .card, .card-text, .card a {
@@ -239,8 +272,9 @@ h1 {
     width: 500px;
     height: 150px;
     margin: 10px 0 0 0px;
+    padding: 0 20px 0 0;
     border: 1px solid #a8a8a8;
-    border-left: 10px solid #fd9b24;
+    border-left: 10px solid #3D00C9;
     background-color: white;
     z-index: 10000;
     color: black;
@@ -260,23 +294,44 @@ h1 {
     font-size: 1.7rem;
     line-height: 2rem;
 }
-.card a {
-    min-width: 80px;
+.card img :hover {
+    outline: none !important;
+}
+.card img {
+    margin: 0 20px;
+    width: 80px;
+    padding-right: 20px;
     height: 146px;
-    border-right: solid 1px #d3d3d3;
     justify-content: center;
     align-items: center;
 }
-.card a :hover {
-    outline: none !important;
+
+/* 3 - INTRODUCING 3 VALUE CHAINS  */
+
+#intro-vcs-visuals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 1980px;
+    min-height: 1080px;
 }
-.card a img {
-    width: 3rem;
-    transition: all 0.3s ease-in;
-    -webkit-animation: likesize 0.3s;
+#wood-worker-intro-vcs #character, #woman-intro-vcs #character {
+    position: fixed;
+    min-width: 800px;
+    max-width: 800px;
+}
+#wood-worker-intro-vcs #character {
+    bottom: 0px;
+    right: -150px;
+    transform: scaleX(-1);
+}
+#woman-intro-vcs #character {
+    bottom: 0px;
+    left: -100px;
 }
 
-/* ANIMATIONS */
+
+/* ALL ANIMATIONS */
 
 @-webkit-keyframes fadein {
     from { opacity: 0; }
@@ -296,8 +351,3 @@ h1 {
     50%  { opacity: 0; }
     100% { opacity: 1; }
 }
-@keyframes likesize {
-    0% {width:3rem;}
-    50% {width:3.2rem;}
-    100% {width:3rem;}
-  }

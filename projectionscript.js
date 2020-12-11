@@ -1,6 +1,6 @@
 var currentProjection;
 
-// EXECUTE 0 - CHOOSE PATH FREE EXPLORE / GUIDED
+// EXECUTE 00 - CHOOSE PATH FREE EXPLORE / GUIDED
 function loadWelcomeModule (){
     document.getElementById('proj-welcome').style.display = 'block';
     currentProjection = 'proj-welcome';
@@ -8,6 +8,16 @@ function loadWelcomeModule (){
 
 function killWelcomeModule (){
     document.getElementById('proj-welcome').style.display = 'none';
+}
+
+// EXECUTE 0 - HELP GUIDE
+function loadHelpGuideModule (){
+    document.getElementById('proj-help-guide').style.display = 'block';
+    currentProjection = 'proj-help-guide';
+}
+
+function killHelpGuideModule (){
+    document.getElementById('proj-help-guide').style.display = 'none';
 }
 
 // EXECUTE 1 - INTRODUCTION - CIRCULARITY
@@ -128,8 +138,13 @@ function startWelcomeModule(){
 
 // functions for Guided Experience
 
-function startIntroductionModule(){
+function startHelpGuideModule(){
     killWelcomeModule();
+    loadHelpGuideModule();
+}
+
+function startIntroductionModule(){
+    killHelpGuideModule();
     loadIntroductionModule();
 }
 

@@ -92,12 +92,16 @@ function initFunction(){
 }
 
 // INITIALIZE ENTIRE SETUP
-// EXECUTE 0 - CHOOSE PATH FREE EXPLORE / GUIDED
+// EXECUTE 00 - CHOOSE PATH FREE EXPLORE / GUIDED
 let initButton = document.getElementById('init-btn');
 initButton.addEventListener('click', initFunction);
 
 // EXECUTE 1 - INTRODUCTION - CIRCULARITY
-let introButton = document.getElementById('intro-btn');
+let helpguideButton = document.getElementById('intro-btn');
+helpguideButton.addEventListener('click', function(){win2.startHelpGuideModule()});
+
+// EXECUTE 1 - INTRODUCTION - CIRCULARITY
+let introButton = document.getElementById('begin-guided-btn');
 introButton.addEventListener('click', function(){win2.startIntroductionModule()});
 
 // EXECUTE 2 - CITIZEN QUOTES - WOULD YOU DO THIS?
@@ -108,6 +112,7 @@ citizenQuotesButton.addEventListener('click', function(){win2.startCitizenQuotes
 // EXECUTE 3 - INTRODUCING 3 VALUE CHAINS
 let introduceValueChainsButton = document.getElementById('introduce-value-chains-btn');
 introduceValueChainsButton.addEventListener('click', function(){win2.startIntroValueChainsModule()});
+introduceValueChainsButton.addEventListener('click', resetLikes);
 
 // EXECUTE 4 - BROAD DATA OF 3 VALUE CHAINS
 let broadDataVcsButton = document.getElementById('broad-data-vcs-btn');
@@ -199,19 +204,121 @@ function resetQuizz(){
     wrongLabel2.classList.remove('label-display');
 }
 
+// Like Button Functionalities
+var liked = {heart1:false, heart2:false, heart3:false, heart4:false, heart5:false, heart6:false, heart7:false, heart8:false, heart9:false};
 
-console.log(hearts);
-for(var i = 0; i < hearts.length; i++){
-    hearts.addEventListener('click', function(e){
-        var itemLiked = false;
-        var heartImg = document.getElementById('heartimg');
-        console.log(hearts[i]);
-      if(itemLiked = false){
-        this.src = "assets/heart-solid.svg";
-        itemLiked = true;
-      }  else {
-        this.src = "assets/heart.svg";
-        itemLiked = false;
-      }
-    })
+var heart1 = document.getElementById('heartimg1');
+var heart2 = document.getElementById('heartimg2');
+var heart3 = document.getElementById('heartimg3');
+var heart4 = document.getElementById('heartimg4');
+var heart5 = document.getElementById('heartimg5');
+var heart6 = document.getElementById('heartimg6');
+var heart7 = document.getElementById('heartimg7');
+var heart8 = document.getElementById('heartimg8');
+var heart9 = document.getElementById('heartimg9');
+
+heart1.addEventListener('click', likeImage1);
+heart2.addEventListener('click', likeImage2);
+heart3.addEventListener('click', likeImage3);
+heart4.addEventListener('click', likeImage4);
+heart5.addEventListener('click', likeImage5);
+heart6.addEventListener('click', likeImage6);
+heart7.addEventListener('click', likeImage7);
+heart8.addEventListener('click', likeImage8);
+heart9.addEventListener('click', likeImage9);
+
+function likeImage1() {
+    if (liked.heart1 == false){
+        heart1.src = 'assets/heart-solid.svg';
+        liked.heart1 = true
+    } else if (liked.heart1 == true){
+        heart1.src = 'assets/heart.svg';
+        liked.heart1 = false;
+    }
+}
+function likeImage2() {
+    if (liked.heart2 == false){
+        heart2.src = 'assets/heart-solid.svg';
+        liked.heart2 = true;
+    } else if (liked.heart2 == true){
+        heart2.src = 'assets/heart.svg';
+        liked.heart2 = false;
+    }
+}
+function likeImage3() {
+    if (liked.heart3 == false){
+        heart3.src = 'assets/heart-solid.svg';
+        liked.heart3 = true
+    } else if (liked.heart3 == true){
+        heart3.src = 'assets/heart.svg';
+        liked.heart3 = false;
+    }
+}
+function likeImage4() {
+    if (liked.heart4 == false){
+        heart4.src = 'assets/heart-solid.svg';
+        liked.heart4 = true
+    } else if (liked.heart4 == true){
+        heart4.src = 'assets/heart.svg';
+        liked.heart4 = false;
+    }
+}
+function likeImage5() {
+    if (liked.heart5 == false){
+        heart5.src = 'assets/heart-solid.svg';
+        liked.heart5 = true
+    } else if (liked.heart5 == true){
+        heart5.src = 'assets/heart.svg';
+        liked.heart5 = false;
+    }
+}
+function likeImage6() {
+    if (liked.heart6 == false){
+        heart6.src = 'assets/heart-solid.svg';
+        liked.heart6 = true
+    } else if (liked.heart6 == true){
+        heart6.src = 'assets/heart.svg';
+        liked.heart6 = false;
+    }
+}
+function likeImage7() {
+    if (liked.heart7 == false){
+        heart7.src = 'assets/heart-solid.svg';
+        liked.heart7 = true
+    } else if (liked.heart7 == true){
+        heart7.src = 'assets/heart.svg';
+        liked.heart7 = false;
+    }
+}
+function likeImage8() {
+    if (liked.heart8 == false){
+        heart8.src = 'assets/heart-solid.svg';
+        liked.heart8 = true
+    } else if (liked.heart8 == true){
+        heart8.src = 'assets/heart.svg';
+        liked.heart8 = false;
+    }
+}
+function likeImage9() {
+    if (liked.heart9 == false){
+        heart9.src = 'assets/heart-solid.svg';
+        liked.heart9 = true
+    } else if (liked.heart9 == true){
+        heart9.src = 'assets/heart.svg';
+        liked.heart9 = false;
+    }
+}
+function resetLikes(){
+    heart1.src = 'assets/heart.svg';
+    heart2.src = 'assets/heart.svg';
+    heart3.src = 'assets/heart.svg';
+    heart4.src = 'assets/heart.svg';
+    heart5.src = 'assets/heart.svg';
+    heart6.src = 'assets/heart.svg';
+    heart7.src = 'assets/heart.svg';
+    heart8.src = 'assets/heart.svg';
+    heart9.src = 'assets/heart.svg';
+    for(var i = 0; i < liked.length; i++){
+        liked.heart[i] = false;
+    }
 }
