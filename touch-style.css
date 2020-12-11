@@ -161,7 +161,7 @@ h1 {
     z-index: 100;
 }
 
-#intro-vcs-visuals, #help-guide-visuals, #character-broad-data-visuals, #character-construction-visuals, #character-food-visuals {
+#intro-vcs-visuals, #help-guide-visuals, #character-broad-data-visuals, #character-construction-visuals, #character-food-visuals, #character-consumer-visuals, #character-speculative-visuals {
     position: fixed;
     top: 0;
     left: 0;
@@ -314,14 +314,13 @@ h1 {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
+    bottom: 0px;
 }
 #wood-worker-intro-vcs #character {
-    bottom: 0px;
     right: -150px;
     transform: scaleX(-1);
 }
 #woman-intro-vcs #character {
-    bottom: 0px;
     left: -100px;
 }
 
@@ -365,17 +364,36 @@ h1 {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
+    bottom: 0px;
 }
 #chef-food #character {
-    bottom: 0px;
     left: -200px;
 }
 #woman-food #character {
-    bottom: 0px;
     right: -150px;
     transform: scaleX(-1);
 }
 
+/* 7 - CONSUMER GOODS SECTOR */
+
+#woman-consumers #character {
+    position: fixed;
+    min-width: 800px;
+    max-width: 800px;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+/* 8 - SPECULATIVE FUTURE */
+
+#woman-speculative #character {
+    position: fixed;
+    min-width: 800px;
+    max-width: 800px;
+    bottom: 0px;
+    left: 0px;
+}
 
 /* ALL ANIMATIONS */
 
