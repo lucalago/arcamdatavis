@@ -131,14 +131,14 @@ function killGetInvolvedModule (){
 }
 
 // EXECUTE 11 - MAIN PAGE DATA DISCOVERY
-function loadDataDashboardModule (){
-    document.getElementById('proj-data-dashboard').style.display = 'block';
-    currentProjection = 'proj-data-dashboard';
-}
+// function loadDataDashboardModule (){
+//     document.getElementById('proj-data-dashboard').style.display = 'block';
+//     currentProjection = 'proj-data-dashboard';
+// }
 
-function killDataDashboardModule (){
-    document.getElementById('proj-data-dashboard').style.display = 'none';
-}
+// function killDataDashboardModule (){
+//     document.getElementById('proj-data-dashboard').style.display = 'none';
+// }
 
 // function to load welcome screen
 
@@ -209,16 +209,16 @@ function startGetInvolvedModule(){
 }
 
 function restartWelcomeModule(){
-    killMConsumerGoodsSectorodule();
+    killGetInvolvedModule();
     loadWelcomeModule();
 }
 
 // functions of discovery data section
 
-function startDataDashboardModule(){
-    killWelcomeModule();
-    loadDataDashboardModule();
-}
+// function startDataDashboardModule(){
+//     killWelcomeModule();
+//     loadDataDashboardModule();
+// }
 
 // reset projection
 

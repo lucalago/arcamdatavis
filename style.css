@@ -69,20 +69,20 @@ p {
     border-radius: 10px;
     font-weight: 800;
     text-align: center;
-    background-color: #00E2BF;
+    background-color: #3D00C9;
     color: white;
-    border: solid 3px #089297;
+    border: solid 2px #7a4aff;
     padding: 2rem 3rem;
     font-size: 1.8rem;
     letter-spacing: 1rem;
     margin: 0 10px 60px;
-    box-shadow: 10px 10px 30px #1d5049;
+    box-shadow: 10px 10px 40px #7040f3;
     z-index: 10000;
 }
 .nav-button:hover {
     color: white;
-    background-color: #222222;
-    border-color: #999999;
+    background-color: #5d06ff;
+    border-color: #ae00ff;
 }
 .nav-button:focus, #close-help-btn, #help-btn, #home-btn  {
     border: none !important;

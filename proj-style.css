@@ -6,7 +6,7 @@ body {
     user-select: none;
     user-zoom: none;
 }
-#proj-welcome, #proj-help-guide, #proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future, #proj-data-dashboard {
+#proj-welcome, #proj-experience-alert, #proj-help-guide, #proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future {
     display: flex;
     width: 1280px;
     height: 800px;
@@ -16,7 +16,7 @@ body {
     left: 0;
     top: 0;
 }
-#proj-intro-concept, #proj-help-guide, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future, #proj-data-dashboard {
+#proj-intro-concept, #proj-experience-alert, #proj-help-guide, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future {
     display: none;
 }
 

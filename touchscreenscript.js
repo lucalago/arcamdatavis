@@ -150,8 +150,8 @@ toHomeButton.addEventListener('click', function(){win2.resetProjection()});
 
 
 // EXECUTE 11 - MAIN PAGE DATA DISCOVERY
-let dataDiscoveryButton = document.getElementById('data-discovery-btn');
-dataDiscoveryButton.addEventListener('click', function(){win2.startDataDashboardModule()});
+// let dataDiscoveryButton = document.getElementById('data-discovery-btn');
+// dataDiscoveryButton.addEventListener('click', function(){win2.startDataDashboardModule()});
 
 
 // remember to add number to the end of the BTN so you can extract that

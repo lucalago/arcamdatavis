@@ -36,7 +36,7 @@ body {
     z-index: 10000;
     pointer-events: all;
     width: 1920px;
-    height: 300px;
+    height: 220px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -56,13 +56,14 @@ body {
 
 .button-nav-bar {
     position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
+    z-index: 10000;
+    top: -3px;
+    right: -3px;
     padding: 20px 20px 35px 35px;
     background-color: #3D00C9;
+    border: solid 2px #7a4aff;
     border-radius: 0 0 0 50px;
-    box-shadow: 0px 0px 60px 20px #4661faa2;
+    box-shadow: 10px 0px 60px 20px #7040f3;
 }
 .button-nav-bar #help-btn, .button-nav-bar #home-btn {
     background-color: rgba(0,0,0,0);
@@ -158,7 +159,6 @@ h1 {
     height: 100%;
     padding: 0;
     margin: 0;
-    z-index: 100;
 }
 
 #intro-vcs-visuals, #help-guide-visuals, #character-broad-data-visuals, #character-construction-visuals, #character-food-visuals, #character-consumer-visuals, #character-speculative-visuals {
@@ -201,7 +201,7 @@ h1 {
     border: 1px solid #a8a8a8;
     border-left: 10px solid #3D00C9;
     background-color: white;
-    z-index: 10000;
+    z-index: 10001;
     color: black;
     text-align: left;
     font-size: 1.7rem;
@@ -393,6 +393,13 @@ h1 {
     max-width: 800px;
     bottom: 0px;
     left: 0px;
+}
+
+/* 9 - COMMITMENT TO FUTURE */
+
+#commitments-container label {
+    font-size: 2rem;
+    color: white;
 }
 
 /* ALL ANIMATIONS */
