@@ -191,6 +191,58 @@ h1 {
     transform: scaleX(-1);
 }
 
+/* MESSAGE ALERT STYLE */
+
+.alert-message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 1300px;
+    height: 700px;
+    margin: 15% auto;
+    background-color: white;
+    box-shadow: 10px 10px 40px #7040f3;
+    border-radius: 8px;
+    justify-content: flex-end;
+} #alert-h1 {
+    color: #3D00C9 !important;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 60px;
+    padding: 0 1.5%;
+} #alert-h2 {
+    color: #3D00C9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: justify;
+    padding: 0 4.5%;
+    margin: 0 0 230px;
+} #ok-alert-btn {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 180px;
+}
+#alert-visual {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 10px 10px 40px #7040f3;
+    border-radius: 50%;
+    z-index: 10000;
+    border: solid 10px #7040f3;
+    top: 100px;
+    left: 860px;
+} #alert-visual img {
+    padding-top: 25px;
+}
+
 /* 1 - INTRODUCTION - CIRCULARITY */
 /* QUIZZ STYLE */
 
@@ -416,29 +468,33 @@ input[type=checkbox].css-checkbox {
 }
 
 input[type=checkbox].css-checkbox + label.css-label {
-    padding-left:29px;
-    height:24px; 
+    padding-left:40px;
+    height:48px; 
     display:inline-block;
-    line-height:24px;
+    line-height:48px;
     background-repeat:no-repeat;
     background-position: 0 0;
-    font-size:24px;
+    font-size: 36px;
     vertical-align:middle;
     cursor:pointer;
-
+    margin-bottom: 50px;
 }
 
 input[type=checkbox].css-checkbox:checked + label.css-label {
-    background-position: 0 -24px;
+    background-position: 0 -48px;
 }
 label.css-label {
-background-image:url(assets/checkbox-01.png);
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
+    font-family: 'Lora', serif;
+    color: white;
+    font-weight: 400;
+    padding-left: 80px !important;
+    background-image:url(assets/checkbox-01.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* ALL ANIMATIONS */
