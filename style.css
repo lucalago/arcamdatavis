@@ -16,7 +16,7 @@ h1, h3, h4, h5, h6, p, button {
 h1 {
     color: #ffffff !important;
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3rem;
     margin: 60px 0 0 80px;
     line-height: 4rem;
@@ -60,10 +60,9 @@ p {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 60px 80px 0;
-    line-height: 4rem;
-    text-align: justify; 
+    line-height: 3rem;
 }
 .nav-button {
     border-radius: 10px;

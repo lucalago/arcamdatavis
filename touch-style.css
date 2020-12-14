@@ -148,6 +148,15 @@ h1 {
     width: 70%;
 }
 
+#bubble1, #bubble2, #bubble3, #bubble4, #bubble5, #bubble6, #bubble7, #bubble8, #bubble9, #bubble10, #bubble11, #bubble12, #bubble13, #bubble14, #bubble15, #bubble16, #bubble17 {
+    position: fixed;
+    z-index: 10000;
+}
+
+#begin-guided-btn, #citizen-quotes-btn, #introduce-value-chains-btn, #broad-data-vcs-btn, #construc-sector-btn, #food-sector-btn, #consumer-goods-btn, #speculative-future, #commit-future-btn, #get-involved-btn, #to-home-btn {
+    animation-delay: 10s;
+}
+
 /* CONTENT DIV STYLE */
 
 .content-container, #commitments-container {
@@ -172,24 +181,48 @@ h1 {
 
 /* HELP GUIDE STYLE */
 
-#wood-worker-help-guide #character, #chef-help-guide #character, #woman-help-guide #character {
+#begin-guided-btn {
+    position: fixed;
+    bottom: 0;
+    right: 150px;
+}
+#wood-worker-help-guide > #character, #chef-help-guide > #character, #woman-help-guide > #character {
     position: fixed;
     min-width: 600px;
     max-width: 600px;
 }
-#wood-worker-help-guide #character {
-    bottom: 100px;
-    left: 0;
+#wood-worker-help-guide > #character {
+    bottom: 50px;
+    left: -80px;
+    animation-delay: 2s;
 }
-#chef-help-guide #character {
-    bottom: -100px;
+#chef-help-guide > #character {
+    bottom: -140px;
     left: 750px;
-    transform: scaleX(-1);
+    transform: scaleX(-1) !important;
+    animation-delay: 6s;
 }
-#woman-help-guide #character {
-    bottom: 200px;
-    right: 0px;
-    transform: scaleX(-1);
+#woman-help-guide > #character {
+    bottom: 150px;
+    right: 200px;
+    animation-delay: 9s;
+}
+#bubble1 {
+    top: 110px;
+    left: 100px;
+    animation-delay: 2.5s;
+}
+#bubble2 {
+    bottom: 300px;
+    right: 850px;
+    max-width: 600px;
+    animation-delay: 6.5s;
+}
+#bubble3 {
+    top: 230px;
+    right: 50px;
+    max-width: 500px;
+    animation-delay: 9.5s;
 }
 
 /* MESSAGE ALERT STYLE */
@@ -299,6 +332,7 @@ h1 {
     pointer-events: none;
 }
 #answer1 {
+    margin-top: 80px;
     -webkit-animation: fadein1 ease-in 2s;
 }
 #answer2 {
@@ -307,6 +341,7 @@ h1 {
 #answer3 {
     -webkit-animation: fadein3 ease-in 2.6s;
 }
+
 
 /* 2 - CITIZEN QUOTES - WOULD YOU DO THIS? */
 /* CARD STYLES */
@@ -321,7 +356,7 @@ h1 {
     height: 16%;
     margin: 20px auto 0;
     padding: 0;
-    -webkit-animation: fadein 2s;
+    animation: fadein 2s;
 }
 .card {
     width: 500px;
@@ -361,75 +396,94 @@ h1 {
     align-items: center;
 }
 
+
 /* 3 - INTRODUCING 3 VALUE CHAINS  */
 
-#wood-worker-intro-vcs #character, #woman-intro-vcs #character {
+#wood-worker-intro-vcs > #character, #woman-intro-vcs > #character {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
     bottom: 0px;
 }
-#wood-worker-intro-vcs #character {
+#wood-worker-intro-vcs > #character {
     right: -150px;
     transform: scaleX(-1);
 }
-#woman-intro-vcs #character {
+#woman-intro-vcs > #character {
     left: -100px;
+}
+#bubble4 {
+    max-width: 650px;
+    top: 50px;
+    left: 250px;
+    animation-delay: 6s;
+}
+#bubble5 {
+    max-width: 600px;
+    right: 250px;
+    top: 100px;
+    animation-delay: 10s;
+}
+#bubble6 {
+    max-width: 500px;
+    bottom: 450px;
+    left: 450px;
+    animation-delay: 14s;
 }
 
 /* 4 - BROAD DATA OF 3 VALUE CHAINS */
 
-#wood-worker-broad-data #character, #chef-broad-data #character {
+#wood-worker-broad-data > #character, #chef-broad-data > #character {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
 }
-#chef-broad-data #character {
+#chef-broad-data > #character {
     bottom: -100px;
     right: -200px;
     transform: scaleX(-1);
 }
-#wood-worker-broad-data #character {
+#wood-worker-broad-data > #character {
     bottom: -300px;
     left: 100px;
 }
 
 /* 5 - CONSTRUCTION SECTOR */
 
-#wood-worker-construction #character, #chef-construction #character {
+#wood-worker-construction > #character, #chef-construction > #character {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
 }
-#chef-construction #character {
+#chef-construction > #character {
     top: -300px;
     right: 200px;
     transform: scale(-1, -1);
 }
-#wood-worker-construction #character {
+#wood-worker-construction > #character {
     bottom: -300px;
     left: -50px;
 }
 
 /* 6 - FOOD SECTOR */
 
-#chef-food #character, #woman-food #character {
+#chef-food > #character, #woman-food > #character {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
     bottom: 0px;
 }
-#chef-food #character {
+#chef-food > #character {
     left: -200px;
 }
-#woman-food #character {
+#woman-food > #character {
     right: -150px;
     transform: scaleX(-1);
 }
 
 /* 7 - CONSUMER GOODS SECTOR */
 
-#woman-consumers #character {
+#woman-consumers > #character {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
@@ -437,10 +491,9 @@ h1 {
     left: 0px;
 }
 
-
 /* 8 - SPECULATIVE FUTURE */
 
-#woman-speculative #character {
+#woman-speculative > #character {
     position: fixed;
     min-width: 800px;
     max-width: 800px;
@@ -498,6 +551,9 @@ label.css-label {
     user-select: none;
 }
 
+/* SECTION 10 - THANK YOU / HOW TO GET INVOLVED */
+
+
 /* ALL ANIMATIONS */
 
 @-webkit-keyframes fadein {
@@ -518,3 +574,126 @@ label.css-label {
     50%  { opacity: 0; }
     100% { opacity: 1; }
 }
+
+@-webkit-keyframes buttonfadein1 {
+    0% { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+  
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInRight {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInRight {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 

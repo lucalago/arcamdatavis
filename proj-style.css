@@ -20,7 +20,17 @@ body {
     display: none;
 }
 
-/*  SECTION 01 - WELCOME  */
+/* SECTION 00 - HELP GUIDE */
+
+#help-guide-text-div {
+    max-width: 65%;
+}
+#help-guide-text-div p {
+    margin-top: 5rem;
+    max-width: 50%;
+}
+
+/*  SECTION- WELCOME  */
 #proj-welcome {
     background-color: #7a8dfe;
 }
@@ -48,24 +58,36 @@ body {
     height: 800px;
     z-index: 100;
 }
-#welcome-visuals-div img {
+#welcome-visuals-div > #map-static {
     position: fixed;
-    top: 0;
-    left: 345px;
-    max-width: 1200px;
-    height: 800px;
+    top: -250px;
+    right: -500px;
+    min-width: 1300px;
     object-fit: contain;
 }
-div #introvcs-text-div {
-    z-index: 100 !important;
-}
-div #introvcs-visuals-div {
-    z-index: 10 !important;
+#welcome-visuals-div > #circular-gif {
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: black;
+    top: 190px;
+    right: 30px;
+    max-width: 450px;
 }
+
+/* SECTION 1 - INTRODUCTION - CIRCULARITY */
+
+#intro-concept {
+    max-width: 65%;
+}
+#intro-concept p {
+    margin-top: 5rem;
+    max-width: 100%;
+}
+
+/* SECTION 2 - CITIZEN QUOTES - WOULD YOU DO THIS? */
+
+#citizen-quotes-text-div {
+    max-width: 70%;
+}
+
 /* SECTION 3 - INTRODUCING 3 VALUE CHAINS */
 
 #video-intro-vcs {
@@ -74,13 +96,21 @@ div #introvcs-visuals-div {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 0;
+    z-index: 10;
+
 }
 #intro-vcs-text-div {
     position: fixed;
+    background: none;
     top: 0;
     left: 0;
     z-index: 100;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(25, 2, 78, 0.603) 100%) no-repeat;
+    height: 50%;
+}
+
+#intro-vcs-text-div > h1 {
+    max-width: 70%;
 }
 
 
@@ -99,6 +129,9 @@ div #introvcs-visuals-div {
     top: 0;
     left: 0;
     z-index: 100;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(25, 2, 78, 0.603) 100%) no-repeat;
+    height: 50%;
+    width: 100%;
 }
 
 /* SECTION 5 - CONSTRUCTION SECTOR */
@@ -118,6 +151,10 @@ div #introvcs-visuals-div {
     z-index: 100;
 }
 
+#construction-text-div > h1 {
+    max-width: 70%;
+}
+
 /* SECTION 6 - FOOD SECTOR */
 
 #video-farms {
@@ -133,4 +170,21 @@ div #introvcs-visuals-div {
     top: 0;
     left: 0;
     z-index: 100;
+    max-width: 70%;
+}
+#food-sector-text-div > p {
+    max-width: 50%;
+}
+
+/* SECTION 7 - CONSUMER GOODS SECTOR */
+
+#consumer-goods-text-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    max-width: 70%;
+}
+#consumer-goods-text-div > p {
+    max-width: 50%;
 }
