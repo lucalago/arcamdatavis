@@ -11,11 +11,6 @@ function killWelcomeModule (){
 }
 
 // EXECUTE 00 - EXPERIENCE ALERT
-function loadExperienceAlertModule (){
-    document.getElementById('proj-experience-alert').style.display = 'block';
-    currentProjection = 'proj-experience-alert';
-}
-
 function killExperienceAlertModule (){
     document.getElementById('proj-experience-alert').style.display = 'none';
 }
@@ -150,11 +145,6 @@ function startWelcomeModule(){
 
 function startExperienceAlertModule(){
     killWelcomeModule();
-    loadExperienceAlertModule();
-}
-
-function startHelpGuideModule(){
-    killExperienceAlertModule();
     loadHelpGuideModule();
 }
 

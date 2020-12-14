@@ -66,3 +66,54 @@ div #introvcs-visuals-div {
     left: 0;
     background-color: black;
 }
+
+/* SECTION 4 - BROAD DATA OF 3 VALUE CHAINS */
+
+#video-boats {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+#broad-data-vcs-text-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* SECTION 5 - CONSTRUCTION SECTOR */
+
+#video-construction {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+#construction-text-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* SECTION 6 - FOOD SECTOR */
+
+#video-farms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+#food-sector-text-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}

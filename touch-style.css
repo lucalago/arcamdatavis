@@ -86,6 +86,7 @@ body {
 }
 #help-paragraph {
     margin: 60px 80px 0;
+    color: black;
 }
 #close-help-btn {
     background-color: #ffffff;

@@ -71,7 +71,7 @@ p {
     text-align: center;
     background-color: #3D00C9;
     color: white;
-    border: solid 2px #7a4aff;
+    border: solid 2px #017e83;
     padding: 2rem 3rem;
     font-size: 1.8rem;
     letter-spacing: 1rem;
@@ -82,7 +82,7 @@ p {
 .nav-button:hover {
     color: white;
     background-color: #5d06ff;
-    border-color: #ae00ff;
+    border-color: #01b0b6;
 }
 .nav-button:focus, #close-help-btn, #help-btn, #home-btn  {
     border: none !important;
