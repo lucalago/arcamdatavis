@@ -66,6 +66,23 @@ div #introvcs-visuals-div {
     left: 0;
     background-color: black;
 }
+/* SECTION 3 - INTRODUCING 3 VALUE CHAINS */
+
+#video-intro-vcs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+#intro-vcs-text-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
 
 /* SECTION 4 - BROAD DATA OF 3 VALUE CHAINS */
 

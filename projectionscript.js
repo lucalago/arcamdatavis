@@ -48,6 +48,10 @@ function killCitizenModule (){
 // EXECUTE 3 - INTRODUCING 3 VALUE CHAINS
 function loadIntroValueChainsModule (){
     document.getElementById('proj-value-chains').style.display = 'block';
+    var videovcs = document.getElementById('video-value-chains');
+    videovcs.pause();
+    videovcs.currentTime = 0;
+    videovcs.load();
     currentProjection = 'proj-value-chains';
 }
 
@@ -58,6 +62,10 @@ function killIntroValueChainsModule (){
 // EXECUTE 4 - BROAD DATA OF 3 VALUE CHAINS
 function loadBroadDataVcsModule (){
     document.getElementById('proj-broad-data-vcs').style.display = 'block';
+    var videos = document.getElementById('videoboats')
+    videos.pause();
+    videos.currentTime = 0;
+    videos.load();
     currentProjection = 'proj-broad-data-vcs';
 }
 
@@ -68,6 +76,10 @@ function killBroadDataVcsModule (){
 // EXECUTE 5 - CONSTRUCTION SECTOR
 function loadConstructionSectorModule (){
     document.getElementById('proj-construction-sector').style.display = 'block';
+    var videoconstru = document.getElementById('videoconstruction');
+    videoconstru.pause();
+    videoconstru.currentTime = 0;
+    videoconstru.load();
     currentProjection = 'proj-construction-sector';
 }
 
@@ -78,6 +90,10 @@ function killConstructionSectorModule (){
 // EXECUTE 6 - FOOD SECTOR
 function loadFoodSectorModule (){
     document.getElementById('proj-food-sector').style.display = 'block';
+    var videofood = document.getElementById('videofood');
+    videofood.pause();
+    videofood.currentTime = 0;
+    videofood.load();
     currentProjection = 'proj-food-sector';
 }
 
