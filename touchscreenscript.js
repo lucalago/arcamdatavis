@@ -24,6 +24,27 @@ for (let link of links){
     })
 };
 
+// TRANSITION FUNCTIONALITY
+var transitionDiv1 = document.getElementById('revealerLayer1');
+var pointerGif = document.getElementById('pointer-gif');
+var pointerTitle = document.getElementById('pointer-title');
+
+function showTransition() {
+    transitionDiv1.style.width = "100%";
+    setTimeout(
+        function(){
+            pointerGif.style.display = 'block';
+            pointerTitle.style.display = 'block';
+        }, 100);
+    setTimeout(function(){hideTransition();}, 5000);
+}
+
+function hideTransition() {
+    pointerGif.style.display = 'none';
+    pointerTitle.style.display = 'none';
+    transitionDiv1.style.width = "0";
+}
+
 // HELP SECTION FUNCTIONALITY
 
 let helpSection = document.getElementById('help-dialogue');
@@ -102,45 +123,65 @@ experienceAlertButton.addEventListener('click', function(){win2.startExperienceA
 
 // EXECUTE 0 - HELP GUIDE
 let helpguideButton = document.getElementById('ok-alert-btn');
+helpguideButton.addEventListener('click', showTransition);
 helpguideButton.addEventListener('click', function(){win2.startHelpGuideModule()});
+
 
 // EXECUTE 1 - INTRODUCTION - CIRCULARITY
 let introButton = document.getElementById('begin-guided-btn');
+introButton.addEventListener('click', showTransition);
 introButton.addEventListener('click', function(){win2.startIntroductionModule()});
+
 
 // EXECUTE 2 - CITIZEN QUOTES - WOULD YOU DO THIS?
 let citizenQuotesButton = document.getElementById('citizen-quotes-btn');
+citizenQuotesButton.addEventListener('click', showTransition);
 citizenQuotesButton.addEventListener('click', resetQuizz);
 citizenQuotesButton.addEventListener('click', function(){win2.startCitizenQuotesModule()});
 
+
 // EXECUTE 3 - INTRODUCING 3 VALUE CHAINS
 let introduceValueChainsButton = document.getElementById('introduce-value-chains-btn');
+introduceValueChainsButton.addEventListener('click', showTransition);
 introduceValueChainsButton.addEventListener('click', function(){win2.startIntroValueChainsModule()});
 introduceValueChainsButton.addEventListener('click', resetLikes);
 
+
 // EXECUTE 4 - BROAD DATA OF 3 VALUE CHAINS
 let broadDataVcsButton = document.getElementById('broad-data-vcs-btn');
+broadDataVcsButton.addEventListener('click', showTransition);
 broadDataVcsButton.addEventListener('click', function(){win2.startBroadDataVcsModule()});
+
 
 // EXECUTE 5 - CONSTRUCTION SECTOR
 let constructionSectorButton = document.getElementById('construc-sector-btn');
+constructionSectorButton.addEventListener('click', showTransition);
 constructionSectorButton.addEventListener('click', function(){win2.startConstructionSectorModule()});
+
 
 // EXECUTE 6 - FOOD SECTOR
 let foodSectorButton = document.getElementById('food-sector-btn');
+foodSectorButton.addEventListener('click', showTransition);
 foodSectorButton.addEventListener('click', function(){win2.startFoodSectorModule()});
+
 
 // EXECUTE 7 - CONSUMER GOODS SECTOR
 let consumerGoodsButton = document.getElementById('consumer-goods-btn');
+consumerGoodsButton.addEventListener('click', showTransition);
 consumerGoodsButton.addEventListener('click', function(){win2.startConsumerGoodsSectorModule()});
+
 
 // EXECUTE 8 - SPECULATIVE FUTURE
 let speculativeFutureButton = document.getElementById('speculative-future-btn');
+speculativeFutureButton.addEventListener('click', showTransition);
 speculativeFutureButton.addEventListener('click', function(){win2.startSpeculativeFutureModule()});
+
 
 // EXECUTE 9 - COMMITMENT TO FUTURE
 let commitFutureButton = document.getElementById('commit-future-btn');
+commitFutureButton.addEventListener('click', showTransition);
 commitFutureButton.addEventListener('click', function(){win2.startCommitFutureModule()});
+
 
 // EXECUTE 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START
 let getInvolvedButton = document.getElementById('get-involved-btn');
