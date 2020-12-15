@@ -194,7 +194,11 @@ h1 {
 }
 
 #begin-guided-btn, #citizen-quotes-btn, #introduce-value-chains-btn, #broad-data-vcs-btn, #construc-sector-btn, #food-sector-btn, #consumer-goods-btn, #speculative-future, #commit-future-btn, #get-involved-btn, #to-home-btn {
-    animation-delay: 10s;
+    animation-delay: 10s !important;
+}
+
+#wood-worker-help-guide > #character, #chef-help-guide > #character, #woman-help-guide > #character, #wood-worker-intro-vcs > #character, #woman-intro-vcs > #character, #wood-worker-broad-data > #character, #chef-broad-data > #character, #wood-worker-construction > #character, #chef-construction > #character, #chef-food > #character, #woman-food > #character, #woman-consumers > #character, #woman-consumers > #character2  {
+    position: fixed;
 }
 
 /* CONTENT DIV STYLE */
@@ -227,7 +231,6 @@ h1 {
     right: 150px;
 }
 #wood-worker-help-guide > #character, #chef-help-guide > #character, #woman-help-guide > #character {
-    position: fixed;
     min-width: 600px;
     max-width: 600px;
 }
@@ -373,15 +376,14 @@ h1 {
 }
 #answer1 {
     margin-top: 80px;
-    -webkit-animation: fadein1 ease-in 2s;
+    animation-delay: 3s;
 }
 #answer2 {
-    -webkit-animation: fadein2 ease-in 2.3s;
+    animation-delay: 3.5s;
 }
 #answer3 {
-    -webkit-animation: fadein3 ease-in 2.6s;
+    animation-delay: 4s;
 }
-
 
 /* 2 - CITIZEN QUOTES - WOULD YOU DO THIS? */
 /* CARD STYLES */
@@ -440,14 +442,13 @@ h1 {
 /* 3 - INTRODUCING 3 VALUE CHAINS  */
 
 #wood-worker-intro-vcs > #character, #woman-intro-vcs > #character {
-    position: fixed;
     min-width: 800px;
     max-width: 800px;
     bottom: 0px;
 }
 #wood-worker-intro-vcs > #character {
     right: -150px;
-    transform: scaleX(-1);
+    transform: scaleX(-1) !important;
 }
 #woman-intro-vcs > #character {
     left: -100px;
@@ -456,59 +457,88 @@ h1 {
     max-width: 650px;
     top: 50px;
     left: 250px;
-    animation-delay: 6s;
+    animation-delay: 3s;
 }
 #bubble5 {
     max-width: 600px;
     right: 250px;
     top: 100px;
-    animation-delay: 10s;
+    animation-delay: 7s;
 }
 #bubble6 {
     max-width: 500px;
     bottom: 450px;
     left: 450px;
-    animation-delay: 14s;
+    animation-delay: 9s;
 }
 
 /* 4 - BROAD DATA OF 3 VALUE CHAINS */
 
 #wood-worker-broad-data > #character, #chef-broad-data > #character {
-    position: fixed;
     min-width: 800px;
     max-width: 800px;
 }
 #chef-broad-data > #character {
-    bottom: -100px;
-    right: -200px;
-    transform: scaleX(-1);
-}
-#wood-worker-broad-data > #character {
     bottom: -300px;
     left: 100px;
+}
+#wood-worker-broad-data > #character {
+    bottom: 100px;
+    right: -200px;
+    transform: scaleX(-1) !important;
+}
+#bubble7 {
+    max-width: 600px;
+    bottom: 650px;
+    right: 250px;
+    animation-delay: 4s;
+}
+#bubble8 {
+    max-width: 650px;
+    bottom: 300px;
+    left: 500px;
+    animation-delay: 8s;
+}
+#construc-sector-btn {
+    position: fixed;
+    right: 300px !important;
 }
 
 /* 5 - CONSTRUCTION SECTOR */
 
 #wood-worker-construction > #character, #chef-construction > #character {
-    position: fixed;
     min-width: 800px;
     max-width: 800px;
 }
 #chef-construction > #character {
     top: -300px;
     right: 200px;
-    transform: scale(-1, -1);
+    transform: scale(-1, -1) !important;
 }
 #wood-worker-construction > #character {
     bottom: -300px;
     left: -50px;
 }
+#bubble9 {
+    max-width: 1000px;
+    bottom: 250px;
+    left: 400px;
+    animation-delay: 5s;
+}
+#bubble10 {
+    max-width: 650px;
+    top: 100px;
+    right: 700px;
+    animation-delay: 9s;
+}
+#food-sector-btn {
+    position: fixed;
+    right: 300px;
+}
 
 /* 6 - FOOD SECTOR */
 
 #chef-food > #character, #woman-food > #character {
-    position: fixed;
     min-width: 800px;
     max-width: 800px;
     bottom: 0px;
@@ -518,17 +548,57 @@ h1 {
 }
 #woman-food > #character {
     right: -150px;
-    transform: scaleX(-1);
+    transform: scaleX(-1) !important;
+}
+#bubble11 {
+    max-width: 800px;
+    bottom: 550px;
+    left: 150px;
+    animation-delay: 4s;
+}
+#bubble12 {
+    max-width: 700px;
+    top: 250px;
+    right: 200px;
+    animation-delay: 8s;
+}
+#bubble13 {
+    max-width: 700px;
+    top: 300px;
+    left: 450px;
+    animation-delay: 3s;
 }
 
 /* 7 - CONSUMER GOODS SECTOR */
 
 #woman-consumers > #character {
-    position: fixed;
     min-width: 800px;
     max-width: 800px;
     bottom: 0px;
     left: 0px;
+}
+
+#woman-consumers > #character2 {
+    top: 0;
+    right: 0;
+}
+#bubble14 {
+    max-width: 900px;
+    top: 50px;
+    left: 350px;
+    animation-delay: 5s;
+}
+#bubble15 {
+    max-width: 700px;
+    top: 300px;
+    left: 450px;
+    animation-delay: 3s;
+}
+#speculative-future-btn {
+    position: fixed;
+    bottom: 250px;
+    right: 300px;
+    animation-delay: 9s;
 }
 
 /* 8 - SPECULATIVE FUTURE */
@@ -539,6 +609,18 @@ h1 {
     max-width: 800px;
     bottom: 0px;
     left: 0px;
+    animation-delay: 3s;
+}
+#bubble16 {
+    max-width: 700px;
+    top: 300px;
+    left: 450px;
+    animation-delay: 3s;
+}
+#commit-future-btn {
+    position: fixed;
+    right: 350px;
+    bottom: 250px;
 }
 
 /* 9 - COMMITMENT TO FUTURE */
@@ -594,146 +676,3 @@ label.css-label {
 /* SECTION 10 - THANK YOU / HOW TO GET INVOLVED */
 
 
-/* ALL ANIMATIONS */
-
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@-webkit-keyframes fadein1 {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-@-webkit-keyframes fadein2 {
-    0% { opacity: 0; }
-    30%  { opacity: 0; }
-    100% { opacity: 1; }
-}
-@-webkit-keyframes fadein3 {
-    0% { opacity: 0; }
-    50%  { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@-webkit-keyframes buttonfadein1 {
-    0% { opacity: 0; }
-    50%  { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    @-webkit-keyframes fadeInLeft {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    }
-    @keyframes fadeInLeft {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    } 
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    }
-    @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    } 
-  
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    @-webkit-keyframes fadeInUp {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    }
-    @keyframes fadeInUp {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    } 
-
-.fadeInRight {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    }
-    @-webkit-keyframes fadeInRight {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    }
-    @keyframes fadeInRight {
-    0% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-    }
-    } 

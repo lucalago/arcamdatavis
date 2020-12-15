@@ -45,7 +45,7 @@ body {
 #welcome-text-div > h1 {
     line-height: 3.8rem !important;
     font-size: 4rem;
-    margin-top: 210px;
+    margin-top: 150px;
 }
 #welcome-text-div > p {
     width: 85%;
@@ -184,8 +184,15 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    max-width: 70%;
+    max-width: 55%;
+    margin-top: 50px;
 }
 #consumer-goods-text-div > p {
     max-width: 50%;
+}
+#adamtower {
+    position: fixed;
+    top: 25px;
+    right: 100px;
+    width: 350px;
 }
