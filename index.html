@@ -61,7 +61,7 @@
      <!-- 0 - HELP GUIDE - BEGINNING -->
      <section id="help-guide">
         <div class="content-container">
-            <h1>To help guide you through the information, say hello to our team.</h1>
+            <h1 class="fadeIn">To help guide you through the information, say hello to our team.</h1>
         </div>
         <div id="help-guide-visuals">
             <div id="wood-worker-help-guide">
@@ -69,7 +69,7 @@
                 <img class="fadeIn" id="bubble1" src="assets/TextBlock-1.gif" alt="">
             </div>
             <div id="chef-help-guide">
-                <img class="fadeInUp" id="character" src="assets/man3-chef.gif" alt="">
+                <img class="fadeInUp" id="character" src="assets/man3-chef-left.gif" alt="">
                 <img class="fadeIn" id="bubble2" src="assets/Bubble2.png" alt="">
             </div>
             <div id="woman-help-guide">
@@ -116,10 +116,12 @@
 
     <!-- 2 - CITIZEN QUOTES - WOULD YOU DO THIS? -->
     <section id="citizen-quotes">
-        <div class="content-container" id="citizen-quotes-container">
+        <div class="fadeIn" id="citizen-text-div">
             <h1>What policies & strategies do you think we could adopt to become a doughnut city?</h1>
             <p>Here are some examples of what other people think. You can tap to like.</p>
-            <div class="card-deck row-cols-3">
+        </div>
+        <div class="content-container" id="citizen-quotes-container">
+            <div class="card-deck row-cols-3 fadeInLeft" id="row1">
                 <div class="card">
                     <img id="heartimg1" src="assets/heart.svg">
                     <p class="card-text">30 hours work week</p>
@@ -133,7 +135,7 @@
                     <p class="card-text">New constructions energy<br> & water position </p>
                 </div>
             </div>
-            <div class="card-deck row-cols-3">
+            <div class="card-deck row-cols-3 fadeInLeft" id="row2">
                 <div class="card">
                     <img id="heartimg4" src="assets/heart.svg">
                     <p class="card-text">Recycling done inside<br> city limits</p>
@@ -147,7 +149,7 @@
                     <p class="card-text">Prohibition of single use plastics</p>
                 </div>
             </div>
-            <div class="card-deck row-cols-3">
+            <div class="card-deck row-cols-3 fadeInLeft" id="row3">
                 <div class="card">
                     <img id="heartimg7" src="assets/heart.svg">
                     <p class="card-text">Recycling is last resort - focus on repair and repurpose</p>
@@ -171,7 +173,7 @@
     <section id="introduce-vcs">
         <div id="intro-vcs-visuals">
             <div id="wood-worker-intro-vcs">
-                <img class="fadeInLeft" id="character" src="assets/man2-woodworker.gif" alt="">
+                <img class="fadeInLeft" id="character" src="assets/man2-woodworker-left.gif" alt="">
                 <img class="fadeIn" id="bubble4" src="assets/Bubble4.png" alt="">
             </div>
             <div id="woman-intro-vcs">
@@ -189,12 +191,15 @@
     <section id="broad-data-vcs">
         <div id="character-broad-data-visuals">
             <div id="wood-worker-broad-data">
-                <img class="fadeInRight" id="character" src="assets/man2-woodworker.gif" alt="">
+                <img class="fadeInRight" id="character" src="assets/man2-woodworker-left.gif" alt="">
                 <img class="fadeIn" id="bubble7" src="assets/Bubble7.png" alt="">
             </div>
             <div id="chef-broad-data">
-                <img class="fadeInUp" id="character" src="assets/man3-chef.gif" alt="">
+                <img class="fadeInUp" id="character" src="assets/man3-chef-right.gif" alt="">
                 <img class="fadeIn" id="bubble8" src="assets/Bubble8.png" alt="">
+            </div>
+            <div id="video-broad-vcs">
+                <video id="video-broad-value-chains" src="assets/P4-broad-data-vcs.mp4" autoplay loop width="1920" height="1080">
             </div>
         </div>
         <div id="nav-container">
@@ -210,7 +215,7 @@
                 <img class="fadeIn" id="bubble9" src="assets/Bubble9.png" alt="">
             </div>
             <div id="chef-construction">
-                <img class="fadeInDown" id="character" src="assets/man3-chef.gif" alt="">
+                <img class="fadeInDown" id="character" src="assets/man3-chef-bottom-left.gif" alt="">
                 <img class="fadeIn" id="bubble10" src="assets/Bubble10.png" alt="">
             </div>
         </div>
@@ -223,11 +228,11 @@
     <section id="food-sector">
         <div id="character-food-visuals">
             <div id="chef-food">
-                <img class="fadeInUp" id="character" src="assets/man3-chef.gif" alt="">
+                <img class="fadeInUp" id="character" src="assets/man3-chef-right.gif" alt="">
                 <img class="fadeIn" id="bubble11" src="assets/Bubble11.png" alt="">
             </div>
             <div id="woman-food">
-                <img class="fadeInUp" id="character" src="assets/woman1-student.gif" alt="">
+                <img class="fadeInUp" id="character" src="assets/woman1-student-left.gif" alt="">
                 <img class="fadeIn" id="bubble12" src="assets/Bubble12.png" alt="">
                 <img class="fadeIn" id="bubble13" src="assets/Bubble13.png" alt="">
             </div>
@@ -243,7 +248,7 @@
             <div id="woman-consumers">
                 <img class="fadeInUp" id="character" src="assets/woman1-student.gif" alt="">
                 <img class="fadeIn" id="bubble14" src="assets/Bubble14.png" alt="">
-                <img class="fadeInUp" id="character2" src="assets/man3-chef.gif" alt="">
+                <img class="fadeInUp" id="character2" src="assets/man3-chef-left.gif" alt="">
                 <img class="fadeIn" id="bubble15" src="assets/Bubble15.png" alt="">
             </div>
         </div>
@@ -262,7 +267,7 @@
             </div>
         </div>
         <div id="nav-container">
-            <button class="nav-button fadeIn" id="commit-future-btn" href="#commit-future">AND MY ROLE?</button>
+            <button class="nav-button fadeIn" id="commit-future-btn" href="#commit-future">LET'S COMMIT</button>
         </div>
     </section>
 
@@ -270,10 +275,10 @@
     <section id="commit-future">
 
         <div id="commitments-container">
-            <div>
-                <h1>I understand...</h1>
+            <div id="commitments-texts-div">
+                <h1 class="fadeIn" id="commit-title">I understand...</h1>
             </div>
-            <form id="form-commitment">
+            <form class="fadeIn" id="form-commitment">
                 <div id="commit1-div">
                     <input required class="css-checkbox" type="checkbox" id="commit1" name="commit1" value="Takepart">
                     <label for="commit1" class="css-label"> In order to become a circular city, all of us need to take part of this change</label>
@@ -289,7 +294,7 @@
             </form>
         </div>
         <div id="nav-container">
-            <button tpye="submit" form="form-commitment" class="nav-button fadeIn" id="get-involved-btn" href="#get-involved">HOW CAN TO GET INVOLVED?</button>
+            <button tpye="submit" form="form-commitment" class="nav-button fadeIn" id="get-involved-btn" href="#get-involved">AND HOW CAN I ENGAGE?</button>
         </div>
     </section>
 

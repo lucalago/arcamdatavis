@@ -5,6 +5,9 @@ body {
     max-height: 800px !important;
     user-select: none;
     user-zoom: none;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 #proj-welcome, #proj-experience-alert, #proj-help-guide, #proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future, #speculative-text-div {
     display: flex;
@@ -98,7 +101,6 @@ body {
     height: 100%;
     width: 100%;
     z-index: 10;
-
 }
 #intro-vcs-text-div {
     position: fixed;
@@ -175,6 +177,7 @@ body {
 }
 #food-sector-text-div > p {
     max-width: 50%;
+    animation-delay: 3s;
 }
 
 /* SECTION 7 - CONSUMER GOODS SECTOR */
@@ -198,10 +201,38 @@ body {
 }
 
 /* SECTION 8 - SPECULATIVE FUTURE */
-#speculative-text-div > .h1-title {
-    color: white !important;
-    z-index: 10000 !important;
+#proj-speculative-future {
+    background-color: #3D00C9;
 }
-#speculative-capsule {
-    
+#speculative-text-div {
+    background-color: #00E2BF;
+    box-shadow: 0px 0px 80px #01b0b6;
+    border-radius: 8px;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 150px;
+    left: 120px;
+    z-index: 100;
+    max-width: 80%;
+    max-height: 60%;
+    padding: 30px;
+}
+#speculative-text-div > h1 {
+    margin: 0;
+    margin-top: 50px;
+}
+#speculative-text-div > h1:nth-child(1) {
+    margin-top: 30px;
+}
+
+/* SECTION 9 - COMMITMENT TO FUTURE */
+#commit-texts-div {
+    max-width: 50%;
+}
+#timecapsule {
+    position: fixed;
+    bottom: 200px;
+    right: 50px;
+    max-width: 600px;
 }

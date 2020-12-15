@@ -223,8 +223,11 @@ h1 {
     min-height: 1080px;
 }
 
-/* HELP GUIDE STYLE */
+/* SECTION 0 - HELP GUIDE STYLE */
 
+.content-container > h1 {
+    animation-delay: 4s;
+}
 #begin-guided-btn {
     position: fixed;
     bottom: 0;
@@ -237,13 +240,12 @@ h1 {
 #wood-worker-help-guide > #character {
     bottom: 50px;
     left: -80px;
-    animation-delay: 2s;
+    animation-delay: 6s;
 }
 #chef-help-guide > #character {
     bottom: -140px;
     left: 750px;
-    transform: scaleX(-1) !important;
-    animation-delay: 6s;
+    animation-delay: 7.5s;
 }
 #woman-help-guide > #character {
     bottom: 150px;
@@ -253,19 +255,19 @@ h1 {
 #bubble1 {
     top: 110px;
     left: 100px;
-    animation-delay: 2.5s;
+    animation-delay: 6.5s;
 }
 #bubble2 {
     bottom: 300px;
     right: 850px;
     max-width: 600px;
-    animation-delay: 6.5s;
+    animation-delay: 9.5s;
 }
 #bubble3 {
     top: 230px;
     right: 50px;
     max-width: 500px;
-    animation-delay: 9.5s;
+    animation-delay: 11s;
 }
 
 /* MESSAGE ALERT STYLE */
@@ -387,7 +389,12 @@ h1 {
 
 /* 2 - CITIZEN QUOTES - WOULD YOU DO THIS? */
 /* CARD STYLES */
-
+#citizen-text-div{
+    animation-delay: 4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 .card-deck, .card, .card-text, .card a {
     display: flex;
     flex-direction: row;
@@ -398,7 +405,6 @@ h1 {
     height: 16%;
     margin: 20px auto 0;
     padding: 0;
-    animation: fadein 2s;
 }
 .card {
     width: 500px;
@@ -415,7 +421,7 @@ h1 {
     outline: none !important;
     border-radius: 8px;
     box-shadow: 3px 3px 30px #6b40d1;
-    transition: all 0.3s ease-in;
+
 }
 .card-text {
     color: #000000 !important;
@@ -437,6 +443,16 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+#row1 {
+    margin-top: 310px;
+    animation-delay: 6.5s;
+}
+#row2 {
+    animation-delay: 7s;
+}
+#row3 {
+    animation-delay: 7.5s;
+}
 
 
 /* 3 - INTRODUCING 3 VALUE CHAINS  */
@@ -448,28 +464,29 @@ h1 {
 }
 #wood-worker-intro-vcs > #character {
     right: -150px;
-    transform: scaleX(-1) !important;
+    animation-delay: 5s;
 }
 #woman-intro-vcs > #character {
     left: -100px;
+    animation-delay: 4s;
 }
 #bubble4 {
     max-width: 650px;
     top: 50px;
     left: 250px;
-    animation-delay: 3s;
+    animation-delay: 5.5s;
 }
 #bubble5 {
     max-width: 600px;
     right: 250px;
     top: 100px;
-    animation-delay: 7s;
+    animation-delay: 9s;
 }
 #bubble6 {
     max-width: 500px;
     bottom: 450px;
     left: 450px;
-    animation-delay: 9s;
+    animation-delay: 12s;
 }
 
 /* 4 - BROAD DATA OF 3 VALUE CHAINS */
@@ -477,6 +494,7 @@ h1 {
 #wood-worker-broad-data > #character, #chef-broad-data > #character {
     min-width: 800px;
     max-width: 800px;
+    animation-delay: 5s;
 }
 #chef-broad-data > #character {
     bottom: -300px;
@@ -485,19 +503,28 @@ h1 {
 #wood-worker-broad-data > #character {
     bottom: 100px;
     right: -200px;
-    transform: scaleX(-1) !important;
 }
 #bubble7 {
     max-width: 600px;
     bottom: 650px;
     right: 250px;
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 #bubble8 {
     max-width: 650px;
     bottom: 300px;
     left: 500px;
-    animation-delay: 8s;
+    animation-delay: 9s;
+}
+#video-broad-vcs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
 }
 #construc-sector-btn {
     position: fixed;
@@ -509,11 +536,11 @@ h1 {
 #wood-worker-construction > #character, #chef-construction > #character {
     min-width: 800px;
     max-width: 800px;
+    animation-delay: 8s;
 }
 #chef-construction > #character {
     top: -300px;
     right: 200px;
-    transform: scale(-1, -1) !important;
 }
 #wood-worker-construction > #character {
     bottom: -300px;
@@ -523,17 +550,18 @@ h1 {
     max-width: 1000px;
     bottom: 250px;
     left: 400px;
-    animation-delay: 5s;
+    animation-delay: 9s;
 }
 #bubble10 {
     max-width: 650px;
     top: 100px;
     right: 700px;
-    animation-delay: 9s;
+    animation-delay: 12s;
 }
 #food-sector-btn {
     position: fixed;
     right: 300px;
+    animation-delay: 14s;
 }
 
 /* 6 - FOOD SECTOR */
@@ -545,28 +573,29 @@ h1 {
 }
 #chef-food > #character {
     left: -200px;
+    animation-delay: 6s;
 }
 #woman-food > #character {
     right: -150px;
-    transform: scaleX(-1) !important;
+    animation-delay: 7s;
 }
 #bubble11 {
     max-width: 800px;
     bottom: 550px;
     left: 150px;
-    animation-delay: 3s;
+    animation-delay: 8s;
 }
 #bubble12 {
     max-width: 700px;
     top: 250px;
     right: 200px;
-    animation-delay: 6s;
+    animation-delay: 11s;
 }
 #bubble13 {
     max-width: 700px;
     bottom: 400px;
     left: 400px;
-    animation-delay: 8s;
+    animation-delay: 12.5s;
 }
 
 /* 7 - CONSUMER GOODS SECTOR */
@@ -576,25 +605,26 @@ h1 {
     max-width: 800px;
     bottom: -20px;
     left: -50px;
+    animation-delay: 4s;
 }
 
 #woman-consumers > #character2 {
     top: 200px;
     right: -200px;
-    transform: scaleX(-1) !important;
     max-width: 45%;
+    animation-delay: 6s;
 }
 #bubble14 {
     max-width: 850px;
     top: 50px;
     left: 300px;
-    animation-delay: 4s;
+    animation-delay: 4.5s;
 }
 #bubble15 {
     max-width: 700px;
     top: 380px;
     right: 300px;
-    animation-delay: 8s;
+    animation-delay: 7s;
 }
 #speculative-future-btn {
     position: fixed;
@@ -611,19 +641,19 @@ h1 {
     max-width: 800px;
     bottom: 0px;
     left: 0px;
-    animation-delay: 3s;
+    animation-delay: 5s;
 }
 #bubble16 {
     max-width: 700px;
-    top: 300px;
-    left: 450px;
-    animation-delay: 3s;
+    top: 150px;
+    left: 350px;
+    animation-delay: 5.5s;
 }
 #bubble17 {
-    max-width: 700px;
+    max-width: 500px;
     top: 400px;
-    left: 450px;
-    animation-delay: 6s;
+    left: 500px;
+    animation-delay: 8s;
 }
 #commit-future-btn {
     position: fixed;
@@ -638,7 +668,16 @@ div #commitments-container {
     align-items: center !important;
     min-height: 800px;
 }
-
+#commitments-texts-div > #commit-title {
+    margin-top: 200px;
+    margin-left: 240px;
+    animation-delay: 4.5s;
+}
+#form-commitment {
+    margin-top: 150px;
+    margin-left: 50px;
+    animation-delay: 5s;
+}
 div #commit1-div, div #commit2-div, div #commit3-div  {
     display: flex;
     flex-direction: row !important;
@@ -646,11 +685,9 @@ div #commit1-div, div #commit2-div, div #commit3-div  {
     align-items: center !important;
     margin: 0 10%;
 }
-
 input[type=checkbox].css-checkbox {
     position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
-
 input[type=checkbox].css-checkbox + label.css-label {
     padding-left:40px;
     height:48px; 
@@ -663,7 +700,6 @@ input[type=checkbox].css-checkbox + label.css-label {
     cursor:pointer;
     margin-bottom: 50px;
 }
-
 input[type=checkbox].css-checkbox:checked + label.css-label {
     background-position: 0 -48px;
 }
@@ -679,6 +715,10 @@ label.css-label {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+#get-involved-btn {
+    position: fixed;
+    bottom: 100px;
 }
 
 /* SECTION 10 - THANK YOU / HOW TO GET INVOLVED */

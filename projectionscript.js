@@ -112,12 +112,12 @@ function killConsumerGoodsSectorModule (){
 }
 
 // EXECUTE 8 - SPECULATIVE FUTURE
-function loadSpectulativeFutureModule (){
+function loadSpeculativeFutureModule (){
     document.getElementById('proj-speculative-future').style.display = 'block';
     currentProjection = 'proj-speculative-future';
 }
 
-function killSpectulativeFutureModule (){
+function killSpeculativeFutureModule (){
     document.getElementById('proj-speculative-future').style.display = 'none';
 }
 
