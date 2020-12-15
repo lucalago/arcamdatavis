@@ -50,6 +50,46 @@ body {
     margin: 0 auto;
     margin-left: auto;
 }
+#welcome-text-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 60%;
+    background: none;
+}
+#welcome-text-div > h1 {
+    line-height: 3.8rem !important;
+    font-size: 4rem;
+}
+#welcome-text-div > p {
+    width: 85%;
+    color: white;
+}
+#welcome-visuals-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 800px;
+    z-index: 100;
+}
+#welcome-visuals-div > #map-static {
+    position: fixed;
+    top: -950px;
+    right: -650px;
+    min-width: 3000px;
+    object-fit: contain;
+}
+#welcome-visuals-div > #circular-gif {
+    position: fixed;
+    top: 0px;
+    right: 420px;
+    min-width: 1100px;
+}
+#welcome > #nav-container {
+    top: 430px;
+}
 /* END OF THIS SECTION */
 
 /* STYLES FOR HOME/HELP NAV BAR AND DIALOGUES */
