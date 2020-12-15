@@ -6,7 +6,7 @@ body {
     user-select: none;
     user-zoom: none;
 }
-#proj-welcome, #proj-experience-alert, #proj-help-guide, #proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future {
+#proj-welcome, #proj-experience-alert, #proj-help-guide, #proj-intro-concept, #proj-citizen-quotes, #proj-value-chains, #proj-broad-data-vcs, #proj-construction-sector, #proj-food-sector, #proj-consumer-goods-sector, #proj-speculative-future, #proj-get-involved, #proj-commit-future, #speculative-text-div {
     display: flex;
     width: 1280px;
     height: 800px;
@@ -195,4 +195,13 @@ body {
     top: 25px;
     right: 100px;
     width: 350px;
+}
+
+/* SECTION 8 - SPECULATIVE FUTURE */
+#speculative-text-div > .h1-title {
+    color: white !important;
+    z-index: 10000 !important;
+}
+#speculative-capsule {
+    
 }
