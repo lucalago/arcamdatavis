@@ -626,8 +626,8 @@ h1 {
     left: -50px;
 }
 #bubble9 {
-    max-width: 1000px;
-    top: 450px;
+    min-width: 1000px;
+    top: 500px;
     left: 400px;
     animation-delay: 9s;
 }

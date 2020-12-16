@@ -124,8 +124,9 @@ function goHome() {
     document.getElementById('welcome').style.display = "block";
     currentSectionId = 'welcome';
     win2.resetProjection();
-    resetQuizz()
-    videoBroadDataReset()
+    resetQuizz();
+    resetLikes();
+    videoBroadDataReset();
 }
 
 
@@ -135,7 +136,7 @@ function goHome() {
 // Sets all the settings and the functions that must be run by the projectionscript.js
 
 var win2;
-var windowFeatures = 'scrollbars=no, toolbar=no, menubar=no,width=1280,height=800,left=0,top=0';
+var windowFeatures = 'scrollbars=no, toolbar=no, menubar=no, width=1280,height=800,left=0,top=0';
 
 function openProjectionWindow() {
     if(win2 == null || win2.closed){
@@ -223,19 +224,9 @@ commitFutureButton.addEventListener('click', function(){win2.startCommitFutureMo
 
 // EXECUTE 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START
 let commitedButton = document.getElementById('commited-btn');
-commitedButton.addEventListener('click', function(){win2.startCommitedModule()});
+commitedButton.addEventListener('click', function(){win2.startCommitedModule();setTimeout(function(){goHome()}, 20000)});
 let toHomeButton = document.getElementById('to-home-btn');
 toHomeButton.addEventListener('click', function(){win2.resetProjection()});
-
-
-// EXECUTE 11 - MAIN PAGE DATA DISCOVERY
-// let dataDiscoveryButton = document.getElementById('data-discovery-btn');
-// dataDiscoveryButton.addEventListener('click', function(){win2.startDataDashboardModule()});
-
-
-// remember to add number to the end of the BTN so you can extract that
-// from an array of items, to facilitate the code
-// loop for the button pressing
 
 // QUIZZ FUNCTIONALITY
 
