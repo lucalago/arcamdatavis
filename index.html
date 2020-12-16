@@ -14,8 +14,6 @@
     <title>ARCAM TOUCHSCREEN</title>
 </head>
 <body>
-    <canvas id="gradient-canvas" data-transition-in>
-    </canvas>
     <section id="init">
         <div id="init-container">
             <h1 id="init-h1">PRESS THE BUTTON TO SET<br>THE INSTALLATION TO THE INITIAL SCREEN</h1>
@@ -92,12 +90,12 @@
     <!-- 1 - INTRODUCTION - CIRCULARITY -->
     <section id="begin-guided-experience">
         <div class="content-container" id="quizz">
-            <h1 class="fadeIn">"To become a thriving and inclusive city, we need to make our economy circular."</h1>
-            <p class="fadeIn">What is the definition of a circular economy?</p>
+            <h1 id="quizz-h1" class="fadeIn">"To become a thriving and inclusive city, we need to make our economy circular."</h1>
+            <p id="quizz-p" class="fadeIn">What is the definition of a circular economy?</p>
             <button class="answeritem wrong fadeIn" id="answer1">
                 <div class="answeritem-titlesection">
                     <div class="answernumber">Option 1</div>
-                    <div class="" id="wrong-label1">Wrong answer!</div>
+                    <div class="" id="wrong-label1">Not quite. It is part of it, but not the definition we are looking for.</div>
                 </div>
                 <div class="answertext">A model based in designing circular products</div>
             </button>
@@ -125,7 +123,7 @@
     <section id="citizen-quotes">
         <div class="fadeIn" id="citizen-text-div">
             <h1>What policies & strategies do you think we could adopt to become a doughnut city?</h1>
-            <p>Here are some examples of what other people think. You can tap to like.</p>
+            <p>Here's some examples of what other people think. Tap the ones you like, or think of new ones.</p>
         </div>
         <div class="content-container" id="citizen-quotes-container">
             <div class="card-deck row-cols-3 fadeInLeft" id="row1">
@@ -206,7 +204,10 @@
                 <img class="fadeIn" id="bubble8" src="assets/Bubble8.png" alt="">
             </div>
             <div id="video-broad-vcs">
-                <video id="video-broad-value-chains" src="assets/P4-broad-data-vcs.mp4" autoplay loop width="1920" height="1080">
+                <video id="video-broad-value-chains" src="assets/P4-broad-data-vcs.mp4" width="1920" height="1080">
+            </div>
+            <div id="video-broad-data-controls">
+                <button id="play-video-btn"><img id="play-icon" src="assets/play-solid.svg"></button>
             </div>
         </div>
         <div id="nav-container">

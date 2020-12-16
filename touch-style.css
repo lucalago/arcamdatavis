@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+body, button, div, section, a, h1, h2, h3, h4, p, img {
+        /* cursor: none; */
+}
+
 /* STYLES FOR INITILIZATION OF SETUP */
 
 #init-container {
@@ -95,17 +99,18 @@ body {
 /* STYLES FOR HOME/HELP NAV BAR AND DIALOGUES */
 
 .button-nav-bar {
+    display: block;
     position: fixed;
     z-index: 10000;
     top: -3px;
-    left: 1694px;
+    margin-left: 1694px;
     padding: 20px 20px 35px 35px;
     background-color: #3D00C9;
     border: solid 2px #7a4aff;
     border-radius: 0 0 0 50px;
     box-shadow: 10px 0px 60px 20px #7040f3;
 }
-.button-nav-bar #help-btn, .button-nav-bar #home-btn {
+.button-nav-bar > #help-btn, .button-nav-bar > #home-btn {
     background-color: rgba(0,0,0,0);
     width: 60px;
     height: 60px;
@@ -169,9 +174,9 @@ div #home-dialogue-btns {
     margin-top: 5%;
 }
 #confirm-home-btn {
-    background-color: #fd9b24;
+    background-color: #01b0b6;
     color: white;
-    border: solid 3px #b95306;
+    border: solid 3px #017e83;
     margin-right: 10px;
 }
 #close-home-btn {
@@ -240,7 +245,7 @@ h1 {
     z-index: 999999;  
     max-width: 400px;
 }
-#pointer-title{
+#pointer-title {
     display: none;
     position: fixed;
     top: 700px;
@@ -303,14 +308,15 @@ h1 {
     flex-direction: column;
     position: relative;
     align-items: center;
+    justify-content: flex-end;
     width: 1300px;
     height: 700px;
-    margin: 15% auto;
+    margin: 11% 300px;
     background-color: white;
     box-shadow: 10px 10px 40px #7040f3;
     border-radius: 8px;
-    justify-content: flex-end;
-} #alert-h1 {
+} 
+#alert-h1 {
     color: #3D00C9 !important;
     font-size: 3rem;
     font-weight: 600;
@@ -326,7 +332,8 @@ h1 {
     text-align: justify;
     padding: 0 4.5%;
     margin: 0 0 230px;
-} #ok-alert-btn {
+} 
+#ok-alert-btn {
     justify-content: center;
     align-items: center;
     position: relative;
@@ -344,7 +351,8 @@ h1 {
     border: solid 10px #7040f3;
     top: 100px;
     left: 860px;
-} #alert-visual img {
+} 
+#alert-visual > img {
     padding-top: 25px;
 }
 
@@ -372,7 +380,12 @@ h1 {
     border-left: 10px solid rgb(0, 202, 0);
     color: rgb(0, 202, 0);
 }
-.wronganswer {
+.wronganswer1 {
+    border: 2px solid rgb(255, 145, 0);
+    border-left: 10px solid rgb(255, 145, 0);
+    color: rgb(255, 145, 0);
+}
+.wronganswer2 {
     border: 2px solid rgb(212, 38, 15);
     border-left: 10px solid rgb(212, 38, 15);
     color: rgb(212, 38, 15);
@@ -392,7 +405,10 @@ h1 {
 #correct-label {
     color: rgb(0, 202, 0);
 }
-#wrong-label1, #wrong-label2 {
+#wrong-label1 {
+    color: rgb(255, 145, 0);
+}
+#wrong-label2 {
     color: rgb(212, 38, 15);
 }
 .label-display {
@@ -412,16 +428,22 @@ h1 {
 #answer3 {
     animation-delay: 8s;
 }
+#quizz-h1 {
+    animation-delay: 6s;
+}
+#quizz-p {
+    animation-delay: 7.5s;
+}
 
 /* 2 - CITIZEN QUOTES - WOULD YOU DO THIS? */
 /* CARD STYLES */
-#citizen-text-div{
+#citizen-text-div {
     animation-delay: 4s;
     position: fixed;
     top: 0;
     left: 0;
 }
-.card-deck, .card, .card-text, .card a {
+.card-deck, .card, .card-text, .card > a {
     display: flex;
     flex-direction: row;
 }
@@ -458,10 +480,10 @@ h1 {
     font-size: 1.7rem;
     line-height: 2rem;
 }
-.card img :hover {
+.card > img :hover {
     outline: none !important;
 }
-.card img {
+.card > img {
     margin: 0 20px;
     width: 80px;
     padding-right: 20px;
@@ -479,7 +501,6 @@ h1 {
 #row3 {
     animation-delay: 7.5s;
 }
-
 
 /* 3 - INTRODUCING 3 VALUE CHAINS  */
 
@@ -506,13 +527,13 @@ h1 {
     max-width: 600px;
     right: 250px;
     top: 100px;
-    animation-delay: 9s;
+    animation-delay: 9.5s;
 }
 #bubble6 {
     max-width: 500px;
     bottom: 450px;
     left: 450px;
-    animation-delay: 12s;
+    animation-delay: 7.5s;
 }
 
 /* 4 - BROAD DATA OF 3 VALUE CHAINS */
@@ -554,7 +575,26 @@ h1 {
 }
 #construc-sector-btn {
     position: fixed;
-    right: 300px !important;
+    margin-bottom: 100px;
+    margin-left: 500px;
+}
+#video-broad-data-controls > #play-video-btn {
+    position: fixed;
+    top: 440px;
+    left: 850px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px #017e83;
+    background-color: #5d06ff;
+    outline: none;
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 999999;
+}
+#play-icon {
+    max-width: 80px;
+    margin-left: 10px;
 }
 
 /* 5 - CONSTRUCTION SECTOR */
@@ -566,27 +606,28 @@ h1 {
 }
 #chef-construction > #character {
     top: -300px;
-    right: 200px;
+    left: 900px;
 }
 #wood-worker-construction > #character {
-    bottom: -300px;
+    top: 550px;
     left: -50px;
 }
 #bubble9 {
     max-width: 1000px;
-    bottom: 250px;
+    top: 450px;
     left: 400px;
     animation-delay: 9s;
 }
 #bubble10 {
     max-width: 650px;
     top: 100px;
-    right: 700px;
+    left: 600px;
     animation-delay: 12s;
 }
 #food-sector-btn {
     position: fixed;
-    right: 300px;
+    left: 900px;
+    margin-bottom: 100px;
     animation-delay: 14s;
 }
 
@@ -679,7 +720,7 @@ h1 {
     max-width: 500px;
     top: 400px;
     left: 500px;
-    animation-delay: 8s;
+    animation-delay: 10.5s;
 }
 #commit-future-btn {
     position: fixed;

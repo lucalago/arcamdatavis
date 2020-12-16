@@ -33,16 +33,32 @@ function showTransition() {
     transitionDiv1.style.width = "100%";
     setTimeout(
         function(){
-            pointerGif.style.display = 'block';
-            pointerTitle.style.display = 'block';
+            pointerGif.style.display = 'none'; //set to block
+            pointerTitle.style.display = 'none'; //set to block
         }, 100);
-    setTimeout(function(){hideTransition();}, 5000);
+    setTimeout(function(){hideTransition();}, 1); //set to 5000
 }
 
 function hideTransition() {
     pointerGif.style.display = 'none';
     pointerTitle.style.display = 'none';
     transitionDiv1.style.width = "0";
+}
+
+// PLAY VIDEO FUNCTIONALITY
+var videoPlay = document.getElementById('play-video-btn');
+var videoBroadData = document.getElementById('video-broad-value-chains');
+
+videoPlay.addEventListener('click', videoTrigger);
+
+function videoTrigger() {
+    videoBroadData.play();
+    videoPlay.style.opacity = '0';
+};
+function videoReset() {
+    videoBroadData.pause();
+    videoBroadData.currentTime = 0;
+    videoPlay.style.opacity = '1';
 }
 
 // HELP SECTION FUNCTIONALITY
@@ -214,32 +230,32 @@ answer3.addEventListener('click', wrongAnswer2);
 
 function correctAnswer(){
     answer2.classList.add('correctanswer');
-    answer1.classList.add('wronganswer');
-    answer3.classList.add('wronganswer');
+    answer1.classList.add('wronganswer1');
+    answer3.classList.add('wronganswer2');
     correctLabel.classList.add('label-display');
 }
 
 function wrongAnswer1(){
-    answer1.classList.add('wronganswer');
+    answer1.classList.add('wronganswer1');
     answer2.classList.add('correctanswer');
-    answer3.classList.add('wronganswer');
+    answer3.classList.add('wronganswer2');
     answer3.classList.add('not-clickable');
     correctLabel.classList.add('label-display');
     wrongLabel1.classList.add('label-display');
 }
 
 function wrongAnswer2(){
-    answer1.classList.add('wronganswer');
+    answer1.classList.add('wronganswer1');
     answer1.classList.add('not-clickable');
-    answer3.classList.add('wronganswer');
+    answer3.classList.add('wronganswer2');
     answer2.classList.add('correctanswer');
     correctLabel.classList.add('label-display');
     wrongLabel2.classList.add('label-display');
 }
 
 function resetQuizz(){
-    answer1.classList.remove('wronganswer');
-    answer3.classList.remove('wronganswer');
+    answer1.classList.remove('wronganswer1');
+    answer3.classList.remove('wronganswer2');
     answer2.classList.remove('correctanswer');
     answer1.classList.remove('not-clickable');
     answer2.classList.remove('not-clickable');
