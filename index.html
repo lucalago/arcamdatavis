@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="touch-style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script> -->
 
     <title>ARCAM TOUCHSCREEN</title>
 </head>
@@ -54,7 +52,7 @@
         </div>
         <div class="alert-message">
             <h1 id="alert-h1">How does this experience work?</h1>
-            <h2 id="alert-h2">This experience includes a projection and a touchscreen. Everytime you press the "Next" button, remind to look at the projector first and then at the touchscreen.</h2>
+            <h2 id="alert-h2">This experience includes a projection and a touchscreen. Everytime you press the "Next" button, please look at the projector first and then at the touchscreen.</h2>
             <div id="nav-container">
                 <button class="nav-button" id="ok-alert-btn" href="#help-guide">GOT IT!</button>
             </div>
@@ -71,7 +69,7 @@
         <div id="help-guide-visuals">
             <div id="wood-worker-help-guide">
                 <img class="fadeInLeft" id="character" src="assets/man2-woodworker.gif" alt="">
-                <img class="fadeIn" id="bubble1" src="assets/TextBlock-1.gif" alt="">
+                <img class="fadeIn" id="bubble1" src="assets/Bubble1.png" alt="">
             </div>
             <div id="chef-help-guide">
                 <img class="fadeInUp" id="character" src="assets/man3-chef-left.gif" alt="">
@@ -90,7 +88,7 @@
     <!-- 1 - INTRODUCTION - CIRCULARITY -->
     <section id="begin-guided-experience">
         <div class="content-container" id="quizz">
-            <h1 id="quizz-h1" class="fadeIn">"To become a thriving and inclusive city, we need to make our economy circular."</h1>
+            <h1 id="quizz-h1" class="fadeIn">To become a thriving and inclusive city, we need to make our economy circular.</h1>
             <p id="quizz-p" class="fadeIn">What is the definition of a circular economy?</p>
             <button class="answeritem wrong fadeIn" id="answer1">
                 <div class="answeritem-titlesection">
@@ -196,22 +194,22 @@
     <section id="broad-data-vcs">
         <div id="character-broad-data-visuals">
             <div id="wood-worker-broad-data">
-                <img class="fadeInRight" id="character" src="assets/man2-woodworker-left.gif" alt="">
-                <img class="fadeIn" id="bubble7" src="assets/Bubble7.png" alt="">
+                <img id="character" src="assets/man2-woodworker-left.gif" alt="">
+                <img id="bubble7" src="assets/Bubble7.png" alt="">
             </div>
             <div id="chef-broad-data">
-                <img class="fadeInUp" id="character" src="assets/man3-chef-right.gif" alt="">
-                <img class="fadeIn" id="bubble8" src="assets/Bubble8.png" alt="">
+                <img id="character" src="assets/man3-chef-right.gif" alt="">
+                <img id="bubble8" src="assets/Bubble8.png" alt="">
             </div>
             <div id="video-broad-vcs">
-                <video id="video-broad-value-chains" src="assets/P4-broad-data-vcs.mp4" width="1920" height="1080">
+                <video id="video-broad-value-chains" src="assets/PERCENTAGES 1920 1080.mp4" width="1920" height="1080">
             </div>
             <div id="video-broad-data-controls">
                 <button id="play-video-btn"><img id="play-icon" src="assets/play-solid.svg"></button>
             </div>
         </div>
         <div id="nav-container">
-            <button class="nav-button fadeIn" id="construc-sector-btn" href="#construction-sector">LET'S DISCOVER</button>
+            <button class="nav-button" id="construc-sector-btn" href="#construction-sector">LET'S DISCOVER</button>
         </div>
     </section>
 
@@ -271,7 +269,6 @@
             <div id="woman-speculative">
                 <img  class="fadeInUp" id="character" src="assets/woman1-student.gif" alt="">
                 <img class="fadeIn" id="bubble16" src="assets/Bubble16.png" alt="">
-                <img class="fadeIn" id="bubble17" src="assets/Bubble17.png" alt="">
             </div>
         </div>
         <div id="nav-container">
@@ -284,9 +281,9 @@
 
         <div id="commitments-container">
             <div id="commitments-texts-div">
-                <h1 class="fadeIn" id="commit-title">I understand...</h1>
+                <h1 class="fadeIn" id="commit-title">Write your commitments down and post them in our time capsule for future generations to see!</h1>
             </div>
-            <form class="fadeIn" id="form-commitment">
+            <!-- <form class="fadeIn" id="form-commitment">
                 <div id="commit1-div">
                     <input required class="css-checkbox" type="checkbox" id="commit1" name="commit1" value="Takepart">
                     <label for="commit1" class="css-label"> In order to become a circular city, all of us need to take part of this change</label>
@@ -299,15 +296,15 @@
                     <input required class="css-checkbox" type="checkbox" id="commit3" name="commit3" value="Become">
                     <label for="commit3" class="css-label"> To become a thriving and inclusive city, we need to make our economy circular</label> 
                 </div>
-            </form>
+            </form> -->
         </div>
         <div id="nav-container">
-            <button tpye="submit" form="form-commitment" class="nav-button fadeIn" id="get-involved-btn" href="#get-involved">AND HOW CAN I ENGAGE?</button>
+            <button tpye="submit" form="form-commitment" class="nav-button fadeIn" id="commited-btn" href="#commited">I HAVE COMMITED</button>
         </div>
     </section>
 
     <!-- 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START -->
-    <section id="get-involved">
+    <section id="commited">
         <div id="nav-container">
             <button class="nav-button fadeIn" id="to-home-btn" href="#welcome">TO HOME SCREEN</button>
         </div>
@@ -333,11 +330,13 @@
     </div>
 
     <!-- HOME DIALOGUE -->
-    <div id="home-dialogue">
-        <h5>Are you sure you want to go back to the home screen?</h5>
-        <div id="home-dialogue-btns">
-            <button class="dialogue-btn" id="confirm-home-btn">YES<br>Take me back.</button>
-            <button class="dialogue-btn" id="close-home-btn">NO<br>Continue exploration.</button>
+    <div id="background-effect">
+        <div id="home-dialogue">
+            <h5>Are you sure you want to go back to the home screen?</h5>
+            <div id="home-dialogue-btns">
+                <button class="dialogue-btn" id="confirm-home-btn">YES<br>Take me back.</button>
+                <button class="dialogue-btn" id="close-home-btn">NO<br>Continue exploration.</button>
+            </div>
         </div>
     </div>
 

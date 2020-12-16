@@ -28,6 +28,10 @@ function killHelpGuideModule (){
 // EXECUTE 1 - INTRODUCTION - CIRCULARITY
 function loadIntroductionModule (){
     document.getElementById('proj-intro-concept').style.display = 'block';
+    var videoIntroCircular = document.getElementById('linear-circular-video');
+    videoIntroCircular.pause();
+    videoIntroCircular.currentTime = 0;
+    setTimeout(function(){videoIntroCircular.play();}, 2000);
     currentProjection = 'proj-intro-concept';
 }
 
@@ -51,7 +55,7 @@ function loadIntroValueChainsModule (){
     var videovcs = document.getElementById('video-value-chains');
     videovcs.pause();
     videovcs.currentTime = 0;
-    videovcs.load();
+    setTimeout(function(){videovcs.play();}, 2000);
     currentProjection = 'proj-value-chains';
 }
 
@@ -62,10 +66,10 @@ function killIntroValueChainsModule (){
 // EXECUTE 4 - BROAD DATA OF 3 VALUE CHAINS
 function loadBroadDataVcsModule (){
     document.getElementById('proj-broad-data-vcs').style.display = 'block';
-    var videos = document.getElementById('videoboats')
-    videos.pause();
-    videos.currentTime = 0;
-    videos.load();
+    var videoBoats = document.getElementById('videoboats')
+    videoBoats.pause();
+    videoBoats.currentTime = 0;
+    setTimeout(function(){videoBoats.play();}, 2000);
     currentProjection = 'proj-broad-data-vcs';
 }
 
@@ -132,13 +136,13 @@ function killCommitFutureModule (){
 }
 
 // EXECUTE 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START
-function loadGetInvolvedModule (){
-    document.getElementById('proj-get-involved').style.display = 'block';
-    currentProjection = 'proj-get-involved';
+function loadCommitedModule (){
+    document.getElementById('proj-commited').style.display = 'block';
+    currentProjection = 'proj-commited';
 }
 
-function killGetInvolvedModule (){
-    document.getElementById('proj-get-involved').style.display = 'none';
+function killCommitedModule (){
+    document.getElementById('proj-commited').style.display = 'none';
 }
 
 // EXECUTE 11 - MAIN PAGE DATA DISCOVERY
@@ -209,13 +213,13 @@ function startCommitFutureModule(){
     loadCommitFutureModule();
 }
 
-function startGetInvolvedModule(){
+function startCommitedModule(){
     killCommitFutureModule();
-    loadGetInvolvedModule();
+    loadCommitedModule();
 }
 
 function restartWelcomeModule(){
-    killGetInvolvedModule();
+    killCommitedModule();
     loadWelcomeModule();
 }
 

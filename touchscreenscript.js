@@ -33,10 +33,10 @@ function showTransition() {
     transitionDiv1.style.width = "100%";
     setTimeout(
         function(){
-            pointerGif.style.display = 'none'; //set to block
-            pointerTitle.style.display = 'none'; //set to block
+            pointerGif.style.display = 'block'; //set to block
+            pointerTitle.style.display = 'block'; //set to block
         }, 100);
-    setTimeout(function(){hideTransition();}, 1); //set to 5000
+    setTimeout(function(){hideTransition();}, 5000); //set to 5000
 }
 
 function hideTransition() {
@@ -48,17 +48,34 @@ function hideTransition() {
 // PLAY VIDEO FUNCTIONALITY
 var videoPlay = document.getElementById('play-video-btn');
 var videoBroadData = document.getElementById('video-broad-value-chains');
+var chefCharacter = document.getElementById('chef-broad-data');
+var woodCharacter = document.getElementById('wood-worker-broad-data');
+var chefSpeech = document.getElementById('bubble8');
+var woodSpeech = document.getElementById('bubble7');
+var discoverButton = document.getElementById('construc-sector-btn');
 
 videoPlay.addEventListener('click', videoTrigger);
 
 function videoTrigger() {
     videoBroadData.play();
     videoPlay.style.opacity = '0';
+    setTimeout(function(){
+    chefCharacter.style.opacity = '1';
+    woodCharacter.style.opacity = '1';
+    setTimeout(function(){woodSpeech.style.opacity = '1';}, 500);
+    setTimeout(function(){chefSpeech.style.opacity = '1';}, 3000);
+    setTimeout(function(){discoverButton.style.opacity = '1';}, 4500);
+    ;}, 37500);
 };
-function videoReset() {
+function videoBroadDataReset() {
     videoBroadData.pause();
     videoBroadData.currentTime = 0;
     videoPlay.style.opacity = '1';
+    chefCharacter.style.opacity = '0';
+    woodCharacter.style.opacity = '0';
+    woodSpeech.style.opacity = '0';
+    chefSpeech.style.opacity = '0';
+    discoverButton.style.opacity = '0';
 }
 
 // HELP SECTION FUNCTIONALITY
@@ -80,6 +97,7 @@ closeHelpButton.addEventListener('click', hideHelpDialogue);
 
 // HOME BUTTON FUNCTIONALITY
 
+let homeBackground = document.getElementById('background-effect');
 let homeButton = document.getElementById('home-btn');
 let goHomeButton = document.getElementById('confirm-home-btn');
 let closeHomeButton = document.getElementById('close-home-btn');
@@ -91,19 +109,23 @@ goHomeButton.addEventListener('click', goHome);
 
 function showHomeDialogue() {
     homeDialogue.style.display = "block";
+    homeBackground.style.display = "block";
 }
 
 function hideHomeDialogue() {
     homeDialogue.style.display ="none";
+    homeBackground.style.display = "none";
 }
 
 function goHome() {
     homeDialogue.style.display ="none";
+    homeBackground.style.display = "none";
     document.getElementById(currentSectionId).style.display = "none";
     document.getElementById('welcome').style.display = "block";
     currentSectionId = 'welcome';
     win2.resetProjection();
     resetQuizz()
+    videoBroadDataReset()
 }
 
 
@@ -200,8 +222,8 @@ commitFutureButton.addEventListener('click', function(){win2.startCommitFutureMo
 
 
 // EXECUTE 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START
-let getInvolvedButton = document.getElementById('get-involved-btn');
-getInvolvedButton.addEventListener('click', function(){win2.startGetInvolvedModule()});
+let commitedButton = document.getElementById('commited-btn');
+commitedButton.addEventListener('click', function(){win2.startCommitedModule()});
 let toHomeButton = document.getElementById('to-home-btn');
 toHomeButton.addEventListener('click', function(){win2.resetProjection()});
 
