@@ -103,8 +103,8 @@ body, button, div, section, a, h1, h2, h3, h4, p, img {
     position: fixed;
     z-index: 10000;
     top: -3px;
-    margin-left: 1694px;
-    padding: 20px 20px 35px 35px;
+    margin-left: 1699px;
+    padding: 20px 102px 35px 35px;
     background-color: #3D00C9;
     border: solid 2px #7a4aff;
     border-radius: 0 0 0 50px;
@@ -116,7 +116,9 @@ body, button, div, section, a, h1, h2, h3, h4, p, img {
     height: 60px;
     border: none;
     margin-right: 20px;
-    margin-top: 10px;
+}
+.button-nav-bar > #home-btn {
+    position: fixed;
 }
 #help-dialogue {
     position: fixed;
