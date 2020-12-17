@@ -312,10 +312,39 @@ body {
 /* SECTION 9 - COMMITMENT TO FUTURE */
 #commit-texts-div {
     max-width: 50%;
+    z-index: 200;
+}
+#time-video-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 1280px;
+    min-height: 800px;
+    background-color: rgb(36, 49, 212) !important;
+    z-index: -10;
 }
 #timecapsule {
     position: fixed;
-    top: 180px;
-    left: 600px;
-    max-width: 600px;
+    top: 0px;
+    left: 0px;
+    z-index: -9;
+}
+
+/* SECTION 10 - THANK YOU */
+#proj-thanks-div {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    min-width: 1280px;
+    min-height: 800px;
+    background: #5d06ff;
+    padding-top: 100px;
+}
+#proj-thanks-div > .thanks-title1, #proj-thanks-div > .p-thanks, #proj-thanks-div > .thanks-title2 {
+    position: relative;
+    margin-left: -10px;
+}
+#proj-thanks-div > .thanks-title2 {
+    font-size: 2.5rem;
 }

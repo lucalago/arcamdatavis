@@ -123,10 +123,10 @@ function goHome() {
     document.getElementById(currentSectionId).style.display = "none";
     document.getElementById('welcome').style.display = "block";
     currentSectionId = 'welcome';
-    win2.resetProjection();
     resetQuizz();
     resetLikes();
     videoBroadDataReset();
+    win2.resetProjection();
 }
 
 
@@ -163,7 +163,6 @@ experienceAlertButton.addEventListener('click', function(){win2.startExperienceA
 // EXECUTE 0 - HELP GUIDE
 let helpguideButton = document.getElementById('ok-alert-btn');
 helpguideButton.addEventListener('click', showTransition);
-helpguideButton.addEventListener('click', function(){win2.startHelpGuideModule()});
 
 
 // EXECUTE 1 - INTRODUCTION - CIRCULARITY
@@ -225,8 +224,6 @@ commitFutureButton.addEventListener('click', function(){win2.startCommitFutureMo
 // EXECUTE 10 - THANK YOU / HOW TO GET INVOLVED / BACK TO START
 let commitedButton = document.getElementById('commited-btn');
 commitedButton.addEventListener('click', function(){win2.startCommitedModule();setTimeout(function(){goHome()}, 20000)});
-let toHomeButton = document.getElementById('to-home-btn');
-toHomeButton.addEventListener('click', function(){win2.resetProjection()});
 
 // QUIZZ FUNCTIONALITY
 

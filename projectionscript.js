@@ -2,8 +2,8 @@ var currentProjection;
 
 // EXECUTE 00 - CHOOSE PATH FREE EXPLORE / GUIDED
 function loadWelcomeModule (){
-    document.getElementById('proj-welcome').style.display = 'block';
-    currentProjection = 'proj-welcome';
+    document.getElementById('proj-sector-sector').style.display = 'block';
+    currentProjection = 'proj-sector-sector';
 }
 
 function killWelcomeModule (){
@@ -234,5 +234,5 @@ function restartWelcomeModule(){
 
 function resetProjection(){
     document.getElementById(currentProjection).style.display = "none";
-    loadWelcomeModule()
+    document.getElementById('proj-welcome').style.display = "block";currentProjection = 'proj-welcome';
 }
