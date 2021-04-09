@@ -124,7 +124,7 @@ body, button, div, section, a, h1, h2, h3, h4, p, img {
 #help-dialogue {
     position: fixed;
     top: 0;
-    left: 960px;
+    right: 0;
     width: 0;
     height: 1080px;
     background-color: white;
