@@ -82,6 +82,7 @@ body, button, div, section, a, h1, h2, h3, h4, p, img {
     position: fixed;
     top: 0px;
     left: 0px;
+    min-width: 1920px;
     max-width: 1920px;
     object-fit: contain;
 }
