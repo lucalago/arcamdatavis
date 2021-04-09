@@ -2,7 +2,7 @@
     display: none;
 }
 
-body {
+html, body {
     min-width: 1920px !important;
     min-height: 1080px !important;
     max-width: 1920px !important;

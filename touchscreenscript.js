@@ -136,11 +136,12 @@ function goHome() {
 // Sets all the settings and the functions that must be run by the projectionscript.js
 
 var win2;
-var windowFeatures = 'scrollbars=no, toolbar=no, menubar=no, width=1280,height=800,left=0,top=0';
+var windowFeatures = 'scrollbars=no, toolbar=no, menubar=no, width=1920,height=1080,left=0,top=0';
 
 function openProjectionWindow() {
     if(win2 == null || win2.closed){
         win2 = window.open('index2.html', 'projectionWindow', windowFeatures);
+        win2.resizeTo(1920, 1080);
     } else {
         win2.focus();
     }
