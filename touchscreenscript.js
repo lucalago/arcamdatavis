@@ -142,7 +142,7 @@ function openProjectionWindow() {
     if(win2 == null || win2.closed){
         win2 = window.open('index2.html', 'projectionWindow', windowFeatures);
     } else {
-        win2.resizeTo(1920, 1080);
+        win2.resizeTo(-1000, -500);
         win2.focus();
     }
 }
