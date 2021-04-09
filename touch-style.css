@@ -80,8 +80,8 @@ body, button, div, section, a, h1, h2, h3, h4, p, img {
 }
 #welcome-visuals-div > #map-static {
     position: fixed;
-    top: -950px;
-    left: -400px;
+    top: 0px;
+    left: 0px;
     min-width: 3000px;
     object-fit: contain;
 }
