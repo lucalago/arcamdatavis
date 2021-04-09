@@ -141,8 +141,8 @@ var windowFeatures = 'scrollbars=no, toolbar=no, menubar=no, width=1920,height=1
 function openProjectionWindow() {
     if(win2 == null || win2.closed){
         win2 = window.open('index2.html', 'projectionWindow', windowFeatures);
-        win2.resizeTo(1920, 1080);
     } else {
+        win2.resizeTo(1920, 1080);
         win2.focus();
     }
 }
